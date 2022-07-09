@@ -1,0 +1,9 @@
+Hotfix v1.0.1.3
+
+*restored has_global_variable = is_playing_invictus check to events and decisions
+	-map check as backup
+
+*added custom_on_action late_antiquity_deurbanization
+	-includes delay of between 1 and 364 days so events don't always trigger on same game date
+
+##########

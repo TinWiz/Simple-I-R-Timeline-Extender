@@ -325,3 +325,17 @@ te_custom_on_action_yearly_country_migrations = {
 		50 = te_migrations.2
 	}
 }
+
+te_late_antiquity_deurbanization = {
+
+	trigger = {
+		current_date > 973.11.3
+		is_tribal = no
+		num_of_cities >= 1
+	}	
+
+	events = {
+		te_plagues.50
+		te_plagues.51
+	}
+}
