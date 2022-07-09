@@ -635,7 +635,7 @@ te_manichees.3 = {
     option = {
         name = "te_manichees.3.a"
         custom_tooltip = "minor_manichee_char_create"
-        scope:new_minor_xian = {
+        scope:new_minor_manichee = {
             set_variable = new_minor_manichee
         }
     }

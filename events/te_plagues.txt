@@ -840,3 +840,132 @@ te_plagues.45 = { #orient remove
 		remove_country_modifier = late_antiquity_pop_decline_orient
 	}
 }
+
+##### Late Antiquity Decentralization #####
+te_plagues.50 = { 
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		current_date > 973.11.3
+		is_tribal = no
+		num_of_cities >= 1
+		any_owned_province = {
+			OR = {
+				AND = {
+					total_population > 120
+					has_city_status = yes
+					NOT = {
+						has_province_modifier = late_antiquity_decentralization_city
+					}
+				}
+				AND = {
+					total_population < 10
+					has_city_status = no
+					NOT = {
+						has_province_modifier = late_antiquity_decentralization_settlement
+					}
+				}
+			}		
+		}
+	}
+
+	immediate = {
+		every_owned_province = {
+			limit = {
+				total_population > 120
+				has_city_status = yes
+				NOT = {
+					has_province_modifier = late_antiquity_decentralization_city
+				}
+			}
+			add_province_modifier = {
+				name = "late_antiquity_decentralization_city"
+				duration = 4356
+			}
+			if = {
+				limit = {
+					has_province_modifier = late_antiquity_decentralization_settlement
+				}
+				remove_province_modifier = late_antiquity_decentralization_settlement
+			}
+		}
+	}
+	
+	option = {
+		every_owned_province = {
+			limit = {
+				total_population < 10
+				has_city_status = no
+				NOT = {
+					has_province_modifier = late_antiquity_decentralization_settlement
+				}
+			}
+			add_province_modifier = {
+				name = "late_antiquity_decentralization_settlement"
+				duration = 4356
+			}
+			if = {
+				limit = {
+					has_province_modifier = late_antiquity_decentralization_city
+				}
+				remove_province_modifier = late_antiquity_decentralization_city
+			}
+		}	
+	}
+}
+
+te_plagues.51 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		current_date > 993.9.3
+		is_tribal = no
+		num_of_cities >= 1
+		any_owned_province = {
+			OR = {
+				AND = {
+					total_population < 80
+					has_province_modifier = late_antiquity_decentralization_city
+				}
+				AND = {
+					total_population > 20
+					has_province_modifier = late_antiquity_decentralization_settlement
+				}
+			}		
+		}
+	}
+
+	immediate = {
+		every_owned_province = {
+			limit = {
+				total_population < 80
+				has_province_modifier = late_antiquity_decentralization_city
+			}
+			remove_province_modifier = late_antiquity_decentralization_city
+			#if = {
+			#	limit = {
+			#		has_province_modifier = late_antiquity_decentralization_settlement
+			#	}
+			#	remove_province_modifier = late_antiquity_decentralization_settlement
+			#}
+		}
+	}		
+
+	option = {	
+		every_owned_province = {
+			limit = {
+				total_population > 20
+				has_province_modifier = late_antiquity_decentralization_settlement
+			}
+			remove_province_modifier = late_antiquity_decentralization_settlement
+			#if = {
+			#	limit = {
+			#		has_province_modifier = late_antiquity_decentralization_city
+			#	}
+			#	remove_province_modifier = late_antiquity_decentralization_city
+			#}
+		}
+	}	
+}
