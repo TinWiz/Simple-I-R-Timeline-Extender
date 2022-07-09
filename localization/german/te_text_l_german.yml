@@ -4,6 +4,12 @@
  barbarian_invasion_war:0 "Einmarsch der Barbaren!"
 
  sirte_foederatus:0 "Foederatus"
+
+ late_antiquity_decentralization_city:0 "Spätantike Entvölkerung"
+ desc_late_antiquity_decentralization_city:1 "Die Menschen verlassen diese Stadt in weniger bevölkerte Provinzen."
+ late_antiquity_decentralization_settlement:0 "Spätantike Deurbanisierung"
+ desc_late_antiquity_decentralization_settlement:1 "Menschen ziehen in die Siedlungen."
+
  #######CULTURE#######:0 ""
  hunnic:0 "Hunnisch"
  huna:0 "Huna"
