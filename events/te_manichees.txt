@@ -1,4 +1,4 @@
-namespace = te_manichees
+﻿namespace = te_manichees
 
 #Manichaeism
 te_manichees.1 = {
@@ -13,21 +13,9 @@ te_manichees.1 = {
         current_date > 1030.2.26 #AD 277
         current_date < 1034.3.2
         NOR = {
-            country_culture_group = germanic
-            religion = germanic_religion
+            country_excluded_from_manichees_trigger = yes
             capital_scope = {
-                OR = {
-                    is_in_region = scandinavia_region
-                    is_in_region = venedia_region
-                    is_in_region = germania_region
-                    is_in_region = germania_magna_region
-                    is_in_region = germania_superior_region
-                    is_in_region = bohemia_area
-                    is_in_region = bohemia_region
-                    is_in_region = vistulia_region
-                    is_in_region = britain_region
-                    is_in_region = caledonia_region
-                }    
+                province_excluded_from_manichees_trigger = yes  
             }
         }
 	}
@@ -350,25 +338,9 @@ te_manichees.14 = {
     trigger = {
         current_date > 1034.12.31
         has_global_variable = manichaeism_spreads
-        NOR = {
-            country_culture_group = germanic
-            religion = germanic_religion
-        }
+        country_excluded_from_manichees_trigger = no
         any_owned_province = {
-            NOR = {
-                is_in_region = scandinavia_region
-                is_in_region = venedia_region
-                is_in_region = germania_region
-                is_in_region = germania_magna_region
-                is_in_region = germania_superior_region
-                is_in_region = bohemia_area
-                is_in_region = bohemia_region
-                is_in_region = vistulia_region
-                is_in_region = britain_region
-                is_in_region = caledonia_region
-                dominant_province_culture_group = culture_group:germanic
-                dominant_province_religion = germanic_religion
-            }
+            province_excluded_from_manichees_trigger = no
             OR = {
                 any_neighbor_province = {
                     any_pops_in_province = {
@@ -389,20 +361,7 @@ te_manichees.14 = {
         name = "l6_christian.5.a"
         random_owned_province = {
             limit = {
-                NOR = {
-                    is_in_region = scandinavia_region
-                    is_in_region = venedia_region
-                    is_in_region = germania_region
-                    is_in_region = germania_magna_region
-                    is_in_region = germania_superior_region
-                    is_in_region = bohemia_area
-                    is_in_region = bohemia_region
-                    is_in_region = vistulia_region
-                    is_in_region = britain_region
-                    is_in_region = caledonia_region
-                    dominant_province_culture_group = culture_group:germanic
-                    dominant_province_religion = germanic_religion
-                }
+                province_excluded_from_manichees_trigger = no
                 OR = {
                     any_neighbor_province = {
                         any_pops_in_province = {
