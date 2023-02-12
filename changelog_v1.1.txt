@@ -1,12 +1,29 @@
 Changelog v1.1
 
-#*restored has_global_variable = is_playing_invictus check to events and decisions
-#	-map check as backup
+*removed events te_plagues.4* for Invictus
+	-Timeline Extension for Invictus should be used instead
+*removed IRCK3 alternate decisions and scripted trigger for Invictus
+
+*added NOT has_global_variable roman_empire_divided check in potential for divide_roman_empire_invictus IRCK3 decision
+	-should not show up twice if severed half conquers other half!
 
 *added custom_on_action late_antiquity_deurbanization
 	-includes delay of between 1 and 364 days so events don't always trigger on same game date
 
+*added province population checks to triggers for te_plagues.11 (Antonine plague) and te_plagues.21 (Cyprian plague) to avoid error log complaints of unset scope where no city of sufficient population is found in a country
+
+*added cyrenaica_region for triggering st_mark theosis event
+
 *added tag = BHA for Bharatavarsha end game formable to late antiquity decline modifiers
+
+*added barbarian_fury_discipline country modifier for discipline 0.05, siege_ability 0.1 and siege_engineers 1
+	-added to event te_barbarians.50
+*added event te_barbarians.55
+	-for AI countries, if a province has more than 300 tribesmen (because of barbarian strongholds) check for dominant_province_culture and if it is huna, hunnic, istvaeonic or irminonic, set ruler and primary culture to that culture
+	-should work in tandem with other te_barbarians.5* events to make invasions have more of an effect on the map, and prevent some provinces from getting massive populations from settling tribesmen
+	-added in te_custom_on_action_yearly_country_tribesmen
+*added event te_barbarians.98 to cleanup any strongholds over Pontic Steppe that might be added and left running after fourth hunnic wave
+	-added to te_custom_on_action_yearly_country_barbarians
 
 *added germanic_migrations modifier to buff late-timeline germanic tribes
 	-added to countries in te_migrations.1 and new hidden event te_migrations.10 
@@ -21,13 +38,15 @@ Changelog v1.1
 
 *added ai_plan_goal te_historic_country te_has_germanisch_wanderung_aimod for germanic migratory tribes in the last century of the timeline to increase aggressiveness and migration_chance if they border a non-germanic great_power
 
-*removed support for older Invictus versions for simplicity
-	-Timeline Extension for Invictus is an alternate version of this mod that is updated for Invictus
-
-*corrected te_migrations.2 line 296 religion effect to set_country_religion with saved foedus_target_country religion scope
+*blocked te_migrations.2 line 296 religion effect to set_country_religion with saved foedus_target_country religion scope
 
 *doubled the WORK_COST_SCALEFACTOR in defines.txt
 	-extends time required for building great wonders, as there tend to be too many great works in the late game
 *increased TECH_ENTRY_YEARS to 20, TECH_AHEAD_OF_TIME lowered to -0.15 and TECH_BEHIND_OF_TIME lowered to -0.15
+
+*lowered added technology to 3500 for severed WRE and 4000 for severed ERE, respectively, in IRCK3 decision
+	-tech check changed for WRE < 35 or ERE < 40
+
+*tiny edits to localizations for l6_conversions_l_english.yml and deities_christianity_l_english.yml
 
 ##########
