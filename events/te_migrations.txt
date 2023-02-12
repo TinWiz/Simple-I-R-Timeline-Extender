@@ -57,7 +57,7 @@ te_migrations.10 = {
 	hidden = yes
 
 	trigger = {
-		current_date > 1128.6.21
+		current_date > 1128.6.28
 		country_culture_group = germanic
 		num_of_cities >= 1
 		OR = { 
@@ -85,7 +85,7 @@ te_migrations.11 = {
 	hidden = yes
 
 	trigger = {
-		current_date > 1129.7.21
+		current_date > 1129.7.29
 		num_of_cities >= 1
 		has_country_modifier = germanisch_wanderung
 		NOT = { 
