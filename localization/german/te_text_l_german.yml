@@ -1,4 +1,5 @@
 ﻿l_german:
+ barbarian_fury_discipline:0 "Verbissen"
  barbarian_fury_rage:0 "Wütend"
  barbarian_invasion_skirmish:0 "Barbaren wandern"
  barbarian_invasion_war:0 "Einmarsch der Barbaren!"
@@ -9,6 +10,8 @@
  desc_late_antiquity_decentralization_city:1 "Die Menschen verlassen diese Stadt in weniger bevölkerte Provinzen."
  late_antiquity_decentralization_settlement:0 "Spätantike Deurbanisierung"
  desc_late_antiquity_decentralization_settlement:1 "Menschen ziehen in die Siedlungen."
+
+ germanisch_wanderung:0 "Völkerwanderung"
 
  #######CULTURE#######:0 ""
  hunnic:0 "Hunnisch"
