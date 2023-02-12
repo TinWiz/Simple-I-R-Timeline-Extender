@@ -1,6 +1,6 @@
-version="1.0.1.3"
-name="IR_TE v1.0.1.3"
+version="1.1"
+name="Simple I:R Timeline Extender"
 tags={
 	"Historical"
 }
-supported_version="2.0"
+supported_version="2.0.3"
