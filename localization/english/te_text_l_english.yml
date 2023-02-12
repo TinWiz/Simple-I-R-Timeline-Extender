@@ -1,4 +1,5 @@
 ﻿l_english:
+ barbarian_fury_discipline:0 "Dogged"
  barbarian_fury_rage:0 "Furious"
  barbarian_invasion_skirmish:0 "Barbarians Migrating"
  barbarian_invasion_war:0 "Barbarians Invading!"
@@ -9,6 +10,8 @@
  desc_late_antiquity_decentralization_city:1 "People are leaving this city for less populated provinces."
  late_antiquity_decentralization_settlement:0 "Late Antiquity Deurbanization"
  desc_late_antiquity_decentralization_settlement:1 "People are moving into the countryside."
+
+ germanisch_wanderung:0 "Germanic Migrations"
 
  #######CULTURE#######:0 ""
  hunnic:0 "Hunnic"
