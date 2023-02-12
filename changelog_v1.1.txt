@@ -48,5 +48,6 @@ Changelog v1.1
 	-tech check changed for WRE < 35 or ERE < 40
 
 *tiny edits to localizations for l6_conversions_l_english.yml and deities_christianity_l_english.yml
+*added English, French and German localization for barbarian_fury_discipline
 
 ##########
