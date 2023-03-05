@@ -1,12 +1,12 @@
 barbarian_fury_discipline = {
-	discipline = 0.05
+	discipline = 0.1
 	siege_ability = 0.1 
 	siege_engineers = 1
 }
 cursed_by_elohim = {
 	levy_size_multiplier = -0.01
 	global_monthly_food_modifier = -0.1
-    	omen_power = -1
+    omen_power = -1
 	religious_tech_investment = -0.25
 	global_population_growth = -0.2
 	global_slaves_happyness = negative_happiness_huge_svalue

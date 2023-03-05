@@ -1,4 +1,4 @@
-﻿te_jewish_emigration = {
+te_jewish_emigration = {
 	theme = Uncategorized
 	picture = "gfx/interface/event_window/te_event_jewish_emigration.dds"
 }
