@@ -1,5 +1,5 @@
 version="1.1"
-name="IR_TE v1.1"
+name="Simple I:R Timeline Extender"
 tags={
 	"Historical"
 }
