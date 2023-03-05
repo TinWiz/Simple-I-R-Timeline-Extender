@@ -3,6 +3,8 @@ Changelog v1.1
 *removed events te_plagues.4* for Invictus
 	-Timeline Extension for Invictus should be used instead
 *removed IRCK3 alternate decisions and scripted trigger for Invictus
+*replaced Invictus-compatible setup file countries.txt with vanilla file
+	-added IRCK3 tags for ERE and WRE
 
 *added NOT has_global_variable roman_empire_divided check in potential for divide_roman_empire_invictus IRCK3 decision
 	-should not show up twice if severed half conquers other half!
