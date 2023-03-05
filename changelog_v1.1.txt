@@ -16,10 +16,12 @@ Changelog v1.1
 
 *added tag = BHA for Bharatavarsha end game formable to late antiquity decline modifiers
 
-*added barbarian_fury_discipline country modifier for discipline 0.05, siege_ability 0.1 and siege_engineers 1
+*added barbarian_fury_discipline country modifier for discipline 0.1, siege_ability 0.1 and siege_engineers 1
 	-added to event te_barbarians.50
+*added 150 create tribal pop effect in te_barbarians.4 for p:5981 (Huns 3rd wave)
+	-increased tribal pop count to 200 in te_barbarians.5 (Huns 4th wave)
 *added event te_barbarians.55
-	-for AI countries, if a province has more than 300 tribesmen (because of barbarian strongholds) check for dominant_province_culture and if it is huna, hunnic, istvaeonic or irminonic, set ruler and primary culture to that culture
+	-for AI countries, if a province has more than 200 tribesmen (because of barbarian strongholds) check for dominant_province_culture and if it is huna, hunnic, istvaeonic or irminonic, set ruler and primary culture to that culture
 	-should work in tandem with other te_barbarians.5* events to make invasions have more of an effect on the map, and prevent some provinces from getting massive populations from settling tribesmen
 	-added in te_custom_on_action_yearly_country_tribesmen
 *added event te_barbarians.98 to cleanup any strongholds over Pontic Steppe that might be added and left running after fourth hunnic wave
@@ -51,3 +53,6 @@ Changelog v1.1
 *added English, French and German localization for barbarian_fury_discipline
 
 ##########
+TO DO: 
+*remove Invictus countries file, replace with vanilla
+*Add Russian and Spanish localization
