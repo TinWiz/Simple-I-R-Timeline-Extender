@@ -1052,7 +1052,19 @@ te_christianity.91 = {
 		current_date > 999.12.12
 		has_global_variable = christianity_expands
 		any_owned_province = {
-			potential_arabia_or_africa_province_for_christianity_spread_trigger = yes
+			OR = {
+				is_in_region = arabia_region
+				is_in_region = arabia_felix_region
+				is_in_region = gedrosia_region
+				is_in_region = nubia_region
+				is_in_region = punt_region
+				is_in_region = upper_egypt_region
+			}
+			NOR = {
+				has_province_modifier = early_christian_church
+				has_province_modifier = early_christian_community
+				has_variable = early_xian_persecution
+			}
 		}
 		NOT = {
 			religion = manichaeism
@@ -1062,13 +1074,25 @@ te_christianity.91 = {
 	immediate = {
 		random_owned_province = {
 			limit = {
-				potential_arabia_or_africa_province_for_christianity_spread_trigger = yes
+				OR = {
+					is_in_region = arabia_region
+					is_in_region = arabia_felix_region
+					is_in_region = gedrosia_region
+					is_in_region = nubia_region
+					is_in_region = punt_region
+					is_in_region = upper_egypt_region
+				}
 				any_pops_in_province = {
 					NOR = { 
 						pop_religion = christianity
 						pop_religion = judaism 
 						pop_religion = manichaeism
 					}
+				}
+				NOR = {
+					has_province_modifier = early_christian_church
+					has_province_modifier = early_christian_community
+					has_variable = early_xian_persecution
 				}
 			}
 			weight = {

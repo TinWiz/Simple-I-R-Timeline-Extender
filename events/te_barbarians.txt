@@ -841,6 +841,16 @@ te_barbarians.4 = {
                     has_global_variable = huns_third_wave
                 }
             }
+            p:5981 = {
+                while = {
+                    limit = {
+                        any_pops_in_province = {
+                            count < 150
+                        }
+                    }
+                    create_pop = tribesmen
+                }
+            }
             p:5975 = {   
                 add_permanent_province_modifier = {
                     name = "barbarian_invasion_skirmish"
@@ -950,7 +960,7 @@ te_barbarians.5 = {
                 while = {
                     limit = {
                         any_pops_in_province = {
-                            count < 150
+                            count < 200
                         }
                     }
                     create_pop = tribesmen
@@ -1598,7 +1608,7 @@ te_barbarians.55 = {
                     dominant_province_culture = istvaeonic
                     dominant_province_culture = irminonic
                 }
-                num_of_tribesmen > 300
+                num_of_tribesmen > 200
             }
         }
     }
@@ -1606,7 +1616,7 @@ te_barbarians.55 = {
     option = {
         random_owned_province = {
             limit = {
-                num_of_tribesmen > 300
+                num_of_tribesmen > 200
             }
             if = {
                 limit = {
