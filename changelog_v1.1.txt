@@ -59,7 +59,7 @@ Changelog v1.1
 *added localization for barbarian_fury_discipline
 
 *added Spanish localization, thanks to SantiD10
-	-small changes to other localization
+	-small edits to other localization
 
 ##########
 TO DO: 
