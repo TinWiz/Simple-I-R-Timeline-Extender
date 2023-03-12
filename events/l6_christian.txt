@@ -308,7 +308,15 @@ l6_christian.5 = {
 			religion = christianity
 		}
 		any_owned_province = {
-			province_excluded_from_gentiles_convert_potential_trigger = no
+			NOR = {
+				is_in_region = scandinavia_region
+				is_in_region = venedia_region
+				is_in_region = germania_region
+				is_in_region = germania_superior_region
+				is_in_region = bohemia_area
+				is_in_region = vistulia_region
+				is_in_region = tibet_region
+			}
 			OR = {
 				any_neighbor_province = {
 					any_pops_in_province = {
@@ -328,7 +336,15 @@ l6_christian.5 = {
 	immediate = {
 		random_owned_province = {
 			limit = {
-				province_excluded_from_gentiles_convert_potential_trigger = no
+				NOR = {
+					is_in_region = scandinavia_region
+					is_in_region = venedia_region
+					is_in_region = germania_region
+					is_in_region = germania_superior_region
+					is_in_region = bohemia_area
+					is_in_region = vistulia_region
+					is_in_region = tibet_region
+				}
 				OR = {
 					any_neighbor_province = {
 						any_pops_in_province = {

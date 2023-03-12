@@ -1,4 +1,4 @@
-﻿monthly_country_pulse = {
+monthly_country_pulse = {
 
 	on_actions = {
 		delay = { days = { 1 15 } }

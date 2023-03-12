@@ -1,4 +1,4 @@
-﻿namespace = te_judaism
+namespace = te_judaism
 
 #Jewish Diaspora to India
 

@@ -99,9 +99,6 @@ te_plagues.11 = {
 			}
 			has_variable = antonine_plague_country	
 		}
-		any_owned_province = {
-			total_population >= 20
-		}
 	}
 
 	immediate = {
@@ -247,9 +244,6 @@ te_plagues.21 = {
 			p:516 = {
 				owner = root
 			}
-		}
-		any_owned_province = {
-			total_population >= 30
 		}
 	}
 
