@@ -312,11 +312,10 @@ l6_christian.5 = {
 				is_in_region = scandinavia_region
 				is_in_region = venedia_region
 				is_in_region = germania_region
-				is_in_region = germania_magna_region
 				is_in_region = germania_superior_region
 				is_in_region = bohemia_area
-				is_in_region = bohemia_region
 				is_in_region = vistulia_region
+				is_in_region = tibet_region
 			}
 			OR = {
 				any_neighbor_province = {
@@ -341,11 +340,10 @@ l6_christian.5 = {
 					is_in_region = scandinavia_region
 					is_in_region = venedia_region
 					is_in_region = germania_region
-					is_in_region = germania_magna_region
 					is_in_region = germania_superior_region
 					is_in_region = bohemia_area
-					is_in_region = bohemia_region
 					is_in_region = vistulia_region
+					is_in_region = tibet_region
 				}
 				OR = {
 					any_neighbor_province = {
