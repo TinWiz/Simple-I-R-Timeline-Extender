@@ -5,6 +5,7 @@ Changelog v1.1
 *removed IRCK3 alternate decisions and scripted trigger for Invictus
 *replaced Invictus-compatible setup file countries.txt with vanilla file
 	-added IRCK3 tags for ERE and WRE
+*removed references to Invictus names for regions germania_magna and bohemia_region
 
 *added NOT has_global_variable roman_empire_divided check in potential for divide_roman_empire_invictus IRCK3 decision
 	-should not show up twice if severed half conquers other half!
@@ -16,12 +17,15 @@ Changelog v1.1
 
 *added cyrenaica_region for triggering st_mark theosis event
 
+*added tibet_region to NOR list for l6_christian.5
+
 *added tag = BHA for Bharatavarsha end game formable to late antiquity decline modifiers
 
 *added barbarian_fury_discipline country modifier for discipline 0.1, siege_ability 0.1 and siege_engineers 1
 	-added to event te_barbarians.50
-*added 150 create tribal pop effect in te_barbarians.4 for p:5981 (Huns 3rd wave)
-	-increased tribal pop count to 200 in te_barbarians.5 (Huns 4th wave)
+*added 175 create tribal pop effect in te_barbarians.4 for p:5981 (Huns 3rd wave)
+	-increased tribal pop count for all barbarian strongholds
+		+increased tribal pop count to 200 in te_barbarians.5 (Huns 4th wave)
 *added event te_barbarians.55
 	-for AI countries, if a province has more than 200 tribesmen (because of barbarian strongholds) check for dominant_province_culture and if it is huna, hunnic, istvaeonic or irminonic, set ruler and primary culture to that culture
 	-should work in tandem with other te_barbarians.5* events to make invasions have more of an effect on the map, and prevent some provinces from getting massive populations from settling tribesmen
@@ -56,5 +60,4 @@ Changelog v1.1
 
 ##########
 TO DO: 
-*remove Invictus countries file, replace with vanilla
 *Add Russian and Spanish localization
