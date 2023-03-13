@@ -58,9 +58,8 @@ Changelog v1.1
 *tiny edits to localizations for l6_conversions_l_english.yml and deities_christianity_l_english.yml
 *added localization for barbarian_fury_discipline
 
+*added Russian, thanks to Podvoh 
 *added Spanish localization, thanks to SantiD10
 	-small edits to other localization
 
 ##########
-TO DO: 
-*Add Russian and Spanish localization
