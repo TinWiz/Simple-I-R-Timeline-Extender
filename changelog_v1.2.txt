@@ -1,6 +1,6 @@
 Changelog v1.2
 
 *deleted deficit.txt events file
-*deleted 
+*deleted tribal_flavour_events file
 
 ##########
