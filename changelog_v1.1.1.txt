@@ -1,4 +1,4 @@
-Changelog v1.2
+Changelog v1.1.1
 
 *deleted deficit.txt events file
 *deleted tribal_flavour_events file
