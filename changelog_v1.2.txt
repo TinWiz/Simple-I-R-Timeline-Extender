@@ -2,5 +2,7 @@ Changelog v1.2
 
 *deleted deficit.txt events file
 *deleted tribal_flavour_events file
+*deleted integrated_culture_decisions_te file
+-no longer needed because tag limit has been increased to 8192!
 
 ##########
