@@ -6,6 +6,9 @@ Changelog v1.1.1
 *removed CIVIL_WAR_STATES_THRESHOLD and CIVIL_WAR_CITIES_THRESHOLD lines from te_defines.txt
   -no longer needed because tag limit has been increased to 8192!
 
+*removed NOT any_province is_in_region fezza_region from trigger in te_plagues.3* files
+  -not needed on the vanilla map
+
 *renamed prices file 00_hardcoded to te_hardcoded
   -removed all prices except buy_military_tradition, which was increased from 80 to 120
     +do not need to copy all of the base game prices
