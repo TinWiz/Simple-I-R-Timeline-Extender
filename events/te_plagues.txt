@@ -304,11 +304,6 @@ te_plagues.30 = { #Central add
 
 	trigger = {
 		current_date > 977.3.13 #224 CE
-		NOT = {
-			any_province = {
-				is_in_region = fezzan_region
-			}
-		}
 		OR = {
 			any_owned_province = {
 				is_in_pars_occidentalis_trigger = yes
@@ -361,11 +356,6 @@ te_plagues.31 = { #Central remove
 
 	trigger = {
 		current_date > 977.3.13
-		NOT = {
-			any_province = {
-				is_in_region = fezzan_region
-			}
-		}
 		OR = {
 			country_culture_group = germanic
 			is_tribal = yes
@@ -414,11 +404,6 @@ te_plagues.32 = { #occident add
 	trigger = {
 		current_date > 1104.4.30
 		current_date < 1353.10.17
-		NOT = {
-			any_province = {
-				is_in_region = fezzan_region
-			}
-		}
 		NOR = {
 			country_culture_group = germanic
 			is_tribal = yes
@@ -455,11 +440,6 @@ te_plagues.33 = { #occident remove
 
 	trigger = {
 		current_date > 1104.4.30
-		NOT = {
-			any_province = {
-				is_in_region = fezzan_region
-			}
-		}
 		OR = {
 			country_culture_group = germanic
 			is_tribal = yes
@@ -492,11 +472,6 @@ te_plagues.34 = { #orient add
 
 	trigger = {
 		current_date > 977.3.13 #224 CE
-		NOT = {
-			any_province = {
-				is_in_region = fezzan_region
-			}
-		}
 		NOR = {
 			any_owned_province = {
 				is_in_pars_occidentalis_trigger = yes
@@ -541,11 +516,6 @@ te_plagues.35 = { #orient remove
 
 	trigger = {
 		current_date > 977.3.13
-		NOT = {
-			any_province = {
-				is_in_region = fezzan_region
-			}
-		}
 		OR = {
 			any_owned_province = {
 				is_in_pars_occidentalis_trigger = yes
