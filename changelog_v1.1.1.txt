@@ -13,5 +13,6 @@ Changelog v1.1.1
   -removed all prices except buy_military_tradition, which was increased from 80 to 120
     +do not need to copy all of the base game prices
 
+*small update to localization te_text_l_german.yml
 
 ##########
