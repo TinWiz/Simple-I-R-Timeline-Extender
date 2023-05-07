@@ -93,6 +93,7 @@ l6_christian.2 = {
 	
 	trigger = {
 		current_date >= 789.5.20 #36AD 
+		current_date <= 818.1.25 #65AD
 		has_global_variable = christianity_spreads_locally
 		#p:750 = {
 		#	owner = root
@@ -307,6 +308,20 @@ l6_christian.5 = {
 			religion = manichaeism
 			religion = christianity
 		}
+		NAND = {
+			is_ai = yes
+			current_date < 953.12.31
+			NOT = {
+				religion = roman_pantheon
+			}	
+			capital_scope = {
+				dominant_province_religion = christianity
+			}
+			religion_pops_in_country = {
+				target = christianity
+				value >= 25
+			}
+		}
 		any_owned_province = {
 			NOR = {
 				is_in_region = scandinavia_region
@@ -316,6 +331,7 @@ l6_christian.5 = {
 				is_in_region = bohemia_area
 				is_in_region = vistulia_region
 				is_in_region = tibet_region
+				dominant_province_religion = christianity
 			}
 			OR = {
 				any_neighbor_province = {
@@ -344,6 +360,7 @@ l6_christian.5 = {
 					is_in_region = bohemia_area
 					is_in_region = vistulia_region
 					is_in_region = tibet_region
+					dominant_province_religion = christianity
 				}
 				OR = {
 					any_neighbor_province = {

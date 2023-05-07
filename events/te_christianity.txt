@@ -1542,7 +1542,7 @@ te_christianity.96 = {
 		if = {
 			limit = {
 				NAND = {
-					current_date < 1066.2.2
+					current_date < 1000.10.1
 					dominant_province_religion = christianity
 				}
 			}
@@ -1584,7 +1584,7 @@ te_christianity.97 = {
 		if = {
 			limit = {
 				NAND = {
-					current_date < 1066.2.2
+					current_date < 1000.10.1
 					#province_id = 1
 					dominant_province_religion = christianity
 				}	
