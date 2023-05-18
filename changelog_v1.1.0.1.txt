@@ -1,6 +1,6 @@
 Patch notes v1.1.0.1
 
-*edited te_decisions to split ai and player only decisions to conver to christianity and manichaeism
+*edited te_decisions to split ai and player only decisions to convert to christianity and manichaeism
 	-edited player decisions to lower requirement for converted pops
 *scripted triggers added in te_religion_triggers.txt for christianity and manichaeism with lower requirements for converted pops
 	-10% for christianity and 5% for manichaeism
