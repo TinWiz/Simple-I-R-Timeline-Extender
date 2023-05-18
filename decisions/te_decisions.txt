@@ -7,7 +7,7 @@ country_decisions = {
 			has_global_variable = christianity_expands
 			num_of_cities >= 1
 			potential_change_religion_trigger = {
-					RELIGION = christianity
+				RELIGION = christianity
 			}
 		}
 
@@ -67,6 +67,12 @@ country_decisions = {
 				factor = 1000
 				OR = {
 					tag = ROM
+					AND = {
+						capital_scope = {
+							province_id = 1
+						}
+						primary_culture = roman
+					}	
 					tag = MAC
 					tag = PRY
 					tag = EGY
@@ -87,9 +93,35 @@ country_decisions = {
 		}
 	}
 
-
 	convert_to_manichaean = {
 		potential = {
+			is_ai = no
+			num_of_cities >= 1
+			potential_change_religion_trigger = {
+				RELIGION = manichaeism
+			}
+		}
+
+		allow = {
+			could_change_religion_trigger = {
+				RELIGION = manichaeism
+			}
+		}
+		
+		effect = {
+			change_religion_effect = {
+				RELIGION = manichaeism
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ai_convert_to_manichaean = {
+		potential = {
+			is_ai = yes
 			num_of_cities >= 1
 			potential_change_religion_trigger = {
 					RELIGION = manichaeism
@@ -97,7 +129,7 @@ country_decisions = {
 		}
 
 		allow = {
-			could_change_religion_trigger = {
+			could_change_religion_mani_trigger = {
 				RELIGION = manichaeism
 			}
 		}
