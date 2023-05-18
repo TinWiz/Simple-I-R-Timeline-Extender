@@ -1,4 +1,4 @@
-version="1.1"
+version="1.1.0"
 name="Simple I:R Timeline Extender"
 tags={
 	"Historical"
