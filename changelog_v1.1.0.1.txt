@@ -25,5 +25,7 @@ Patch notes v1.1.0.1
 	-also any country with judaism religion and capital in palestine_region
 *added judea_heritage and samaria_heritage to te_decisions for ai_will_do factor 0
 
+*added option for ai_constantinople in te_decisions for a country with roman culture and heritage
+
 
 ##########
