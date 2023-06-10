@@ -58,6 +58,7 @@ Changelog v1.1.1
 	-also armenian_heritage and primary_culture = armenian to st_nathanael_bartholomew
 
 *added tag BHA to te_barbarians.6 and te_barbarians.7
+	-also to option te_judaism.21.b
 	
 *small update to localization te_text_l_german.yml
 *typo in localization l6_conversions_l_english.yml
