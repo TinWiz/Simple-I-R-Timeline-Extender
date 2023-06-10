@@ -1,6 +1,6 @@
 namespace = te_plagues
 
-#Antonine Plague AD 165–180
+#Antonine Plague AD 165â€“180
 te_plagues.1 = {
 type = country_event
 title = "te_plagues.1.t"
@@ -42,7 +42,7 @@ fire_only_once = yes
 	}
 }	
 
-#Antonine Plague epidemic – provinces
+#Antonine Plague epidemic â€“ provinces
 te_plagues.10 = {
 	type = province_event
 	hidden = yes
@@ -77,7 +77,7 @@ te_plagues.10 = {
 	}
 }
 
-#Antonine Plague epidemic — country
+#Antonine Plague epidemic â€” country
 te_plagues.11 = {
 	type = country_event
 	title = "te_plagues.11.t"
@@ -149,7 +149,7 @@ te_plagues.12 = {
 	}
 }
 
-#Cyprian Plague AD249—262
+#Cyprian Plague AD249â€”262
 te_plagues.2 = {
 	type = country_event
 	title = "te_plagues.2.t"
@@ -191,7 +191,7 @@ te_plagues.2 = {
 	}
 }	
 
-#Cyprian Plague epidemic — provinces
+#Cyprian Plague epidemic â€” provinces
 te_plagues.20 = {
 	type = province_event
 	hidden = yes
@@ -226,7 +226,7 @@ te_plagues.20 = {
 	}
 }
 
-#Cyprian Plague — country
+#Cyprian Plague â€” country
 te_plagues.21 = {
 	type = country_event
 	title = "te_plagues.21.t"
