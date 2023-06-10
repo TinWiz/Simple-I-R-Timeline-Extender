@@ -13,9 +13,6 @@ Changelog v1.1.1
 
 *added option for ai_constantinople in te_decisions for a country with roman culture and heritage
 
-*removed any_province check in te_plagues.3* triggers
-	-unnecessary and might cause slowdowns
-
 *added NAND trigger to l6_christian.5 to slow spread of Christianity in non-Hellenic countries before 954 AUC / 200 CE
 *added dominant_province_religion christianity to NOR triggers for l6_christian.5
   -will no longer trigger on provinces with a christian majority
@@ -59,6 +56,8 @@ Changelog v1.1.1
 	
 *added limit religion = christianity for all christianity saints to trigger theosis events
 	-also armenian_heritage and primary_culture = armenian to st_nathanael_bartholomew
+
+*added tag BHA to te_barbarians.6 and te_barbarians.7
 	
 *small update to localization te_text_l_german.yml
 *typo in localization l6_conversions_l_english.yml
