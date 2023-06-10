@@ -27,5 +27,7 @@ Patch notes v1.1.0.1
 
 *added option for ai_constantinople in te_decisions for a country with roman culture and heritage
 
+*removed any_province check in te_plagues.3* triggers
+	-unnecessary and might cause slowdowns
 
 ##########
