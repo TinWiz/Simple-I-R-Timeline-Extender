@@ -1942,6 +1942,7 @@ te_barbarians.6 = {
             }
             tag = SEL
             tag = MRY
+	    tag = BHA
         }
     }
     
@@ -2197,6 +2198,7 @@ te_barbarians.7 = {
             }
             tag = SEL
             tag = MRY
+	    tag = BHA
         }
     }
 
