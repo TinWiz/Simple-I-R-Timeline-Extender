@@ -184,7 +184,9 @@ country_decisions = {
 				factor = 0
 				OR = {
 					tag = JUD
+					heritage = judea_heritage
 					tag = SMA
+					heritage = samaria_heritage
 				}
 			}
 		}
