@@ -67,6 +67,9 @@ Changelog v1.1.1
 *edited te_barbarians.55 and added te_barbarians.56 to create a new country in a great power invaded by huns
 	-creates new countries from provinces that are overrun by barbarians depending on owner state rank
 		+only if province has more than 200 tribesmen of huna or hunnic culture 
+
+*changed truce duration from -1 to 3000 in IRCK3 decision between WRE and ERE
+	-stop error log complaints
 	
 *small update to localization te_text_l_german.yml
 *typo in localization l6_conversions_l_english.yml
