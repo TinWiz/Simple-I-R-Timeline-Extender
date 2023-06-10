@@ -194,7 +194,13 @@ country_decisions = {
 		potential = {
 			current_date > 1083.5.11
 			is_ai = yes
-			tag = ROM
+			OR = {
+				tag = ROM
+				AND = {
+					primary_culture = roman
+					heritage = roman_heritage
+				}
+			}	
 			owns = 1
 			owns = 1453
 			NOR = {
