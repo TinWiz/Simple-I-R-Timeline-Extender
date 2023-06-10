@@ -1,5 +1,21 @@
 Changelog v1.1.1
 
+*added alternative potential for IRCK3 decision for dividing Roman Empire if tag is no longer ROM so AI can still take decision after having lost a civil war
+	-if primary culture is Roman and heritage is Roman
+
+*added alternatives for Diadochi tags to trigger in te_christianity.72 to target countries for AI if they have lost a civil war
+	-if primary culture is Macedonian with each Diadochi heritage
+	-also added to ai_convert_to_christian in te_decisions
+
+*added judea_heritage and samaria_heritage to trigger for te_judaism.2
+	-also any country with judaism religion and capital in palestine_region
+*added judea_heritage and samaria_heritage to te_decisions for ai_will_do factor 0
+
+*added option for ai_constantinople in te_decisions for a country with roman culture and heritage
+
+*removed any_province check in te_plagues.3* triggers
+	-unnecessary and might cause slowdowns
+
 *added NAND trigger to l6_christian.5 to slow spread of Christianity in non-Hellenic countries before 954 AUC / 200 CE
 *added dominant_province_religion christianity to NOR triggers for l6_christian.5
   -will no longer trigger on provinces with a christian majority
@@ -43,22 +59,6 @@ Changelog v1.1.1
 	
 *added limit religion = christianity for all christianity saints to trigger theosis events
 	-also armenian_heritage and primary_culture = armenian to st_nathanael_bartholomew
-	
-*added alternative potential for IRCK3 decision for dividing Roman Empire if tag is no longer ROM so AI can still take decision after having lost a civil war
-	-if primary culture is Roman and heritage is Roman
-
-*added alternatives for Diadochi tags to trigger in te_christianity.72 to target countries for AI if they have lost a civil war
-	-if primary culture is Macedonian with each Diadochi heritage
-	-also added to ai_convert_to_christian in te_decisions
-
-*added judea_heritage and samaria_heritage to trigger for te_judaism.2
-	-also any country with judaism religion and capital in palestine_region
-*added judea_heritage and samaria_heritage to te_decisions for ai_will_do factor 0
-
-*added option for ai_constantinople in te_decisions for a country with roman culture and heritage
-
-*removed any_province check in te_plagues.3* triggers
-	-unnecessary and might cause slowdowns
 	
 *small update to localization te_text_l_german.yml
 *typo in localization l6_conversions_l_english.yml
