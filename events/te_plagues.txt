@@ -1,6 +1,6 @@
 namespace = te_plagues
 
-#Antonine Plague AD 165–180
+#Antonine Plague AD 165â€“180
 te_plagues.1 = {
 type = country_event
 title = "te_plagues.1.t"
@@ -42,7 +42,7 @@ fire_only_once = yes
 	}
 }	
 
-#Antonine Plague epidemic – provinces
+#Antonine Plague epidemic â€“ provinces
 te_plagues.10 = {
 	type = province_event
 	hidden = yes
@@ -77,7 +77,7 @@ te_plagues.10 = {
 	}
 }
 
-#Antonine Plague epidemic — country
+#Antonine Plague epidemic â€” country
 te_plagues.11 = {
 	type = country_event
 	title = "te_plagues.11.t"
@@ -149,7 +149,7 @@ te_plagues.12 = {
 	}
 }
 
-#Cyprian Plague AD249—262
+#Cyprian Plague AD249â€”262
 te_plagues.2 = {
 	type = country_event
 	title = "te_plagues.2.t"
@@ -191,7 +191,7 @@ te_plagues.2 = {
 	}
 }	
 
-#Cyprian Plague epidemic — provinces
+#Cyprian Plague epidemic â€” provinces
 te_plagues.20 = {
 	type = province_event
 	hidden = yes
@@ -226,7 +226,7 @@ te_plagues.20 = {
 	}
 }
 
-#Cyprian Plague — country
+#Cyprian Plague â€” country
 te_plagues.21 = {
 	type = country_event
 	title = "te_plagues.21.t"
@@ -304,11 +304,6 @@ te_plagues.30 = { #Central add
 
 	trigger = {
 		current_date > 977.3.13 #224 CE
-		NOT = {
-			any_province = {
-				is_in_region = fezzan_region
-			}
-		}
 		OR = {
 			any_owned_province = {
 				is_in_pars_occidentalis_trigger = yes
@@ -361,11 +356,6 @@ te_plagues.31 = { #Central remove
 
 	trigger = {
 		current_date > 977.3.13
-		NOT = {
-			any_province = {
-				is_in_region = fezzan_region
-			}
-		}
 		OR = {
 			country_culture_group = germanic
 			is_tribal = yes
@@ -414,11 +404,6 @@ te_plagues.32 = { #occident add
 	trigger = {
 		current_date > 1104.4.30
 		current_date < 1353.10.17
-		NOT = {
-			any_province = {
-				is_in_region = fezzan_region
-			}
-		}
 		NOR = {
 			country_culture_group = germanic
 			is_tribal = yes
@@ -455,11 +440,6 @@ te_plagues.33 = { #occident remove
 
 	trigger = {
 		current_date > 1104.4.30
-		NOT = {
-			any_province = {
-				is_in_region = fezzan_region
-			}
-		}
 		OR = {
 			country_culture_group = germanic
 			is_tribal = yes
@@ -492,11 +472,6 @@ te_plagues.34 = { #orient add
 
 	trigger = {
 		current_date > 977.3.13 #224 CE
-		NOT = {
-			any_province = {
-				is_in_region = fezzan_region
-			}
-		}
 		NOR = {
 			any_owned_province = {
 				is_in_pars_occidentalis_trigger = yes
@@ -541,11 +516,6 @@ te_plagues.35 = { #orient remove
 
 	trigger = {
 		current_date > 977.3.13
-		NOT = {
-			any_province = {
-				is_in_region = fezzan_region
-			}
-		}
 		OR = {
 			any_owned_province = {
 				is_in_pars_occidentalis_trigger = yes
