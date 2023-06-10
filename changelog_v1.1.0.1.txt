@@ -10,5 +10,8 @@ Patch notes v1.1.0.1
 	-even if Rome has previously lost a civil war and tag is dynamic, not ROM
 *edited te_christianity.98 to trigger and create minor christian character if 10% of pops are christian
 	-lowered from 20%
+	
+*added limit religion = christianity for all christianity saints to trigger theosis events
+	-also armenian_heritage and primary_culture = armenian to st_nathanael_bartholomew
 
 ##########
