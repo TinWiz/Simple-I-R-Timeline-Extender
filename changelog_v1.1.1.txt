@@ -1,0 +1,37 @@
+Changelog v1.1.1
+
+*added NAND trigger to l6_christian.5 to slow spread of Christianity in non-Hellenic countries before 954 AUC / 200 CE
+*added dominant_province_religion christianity to NOR triggers for l6_christian.5
+  -will no longer trigger on provinces with a christian majority
+    +should not convert all pops of non-christian countries
+*edited trigger for l6_christan.4 to limit effect if global_variable jewish_diaspora is not set	
+*organized script for l6_christian.3 to trigger even if tag is JUD or SMA
+*set end date for l6_christian.2 on 818.1.25 =, 65AD
+
+*lowered trigger dates for full effects of te_christianity.96 and te_christianity.97 to 1000 AUC 
+  -balance for provinces with early_christian_community or early_christian_church
+	+edited te_christianity.96 and te_christianity.97 to limit effect if country religion is judaism
+
+*added baltic culture group and matrist religion to NOR triggers for te_manichees events
+
+*deleted deficit.txt events file
+*deleted tribal_flavour_events file
+*deleted integrated_culture_decisions_te file
+*removed CIVIL_WAR_STATES_THRESHOLD and CIVIL_WAR_CITIES_THRESHOLD lines from te_defines.txt
+  -no longer needed because tag limit has been increased to 8192!
+
+*removed NOT any_province is_in_region fezzan_region from trigger in te_plagues.3* files
+  -not needed on the vanilla map
+
+*removed tag ISR from te_judaism.2
+  -leftover Invictus tag for Judea
+
+*renamed prices file 00_hardcoded to te_hardcoded
+  -removed all prices except buy_military_tradition, which was increased from 80 to 120
+    +do not need to copy all of the base game prices
+
+*small update to localization te_text_l_german.yml
+*typo in localization l6_conversions_l_english.yml
+
+##########
+Testing

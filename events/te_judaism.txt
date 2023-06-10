@@ -54,7 +54,7 @@ te_judaism.2 = {
             has_global_variable = jewish_diaspora
         }
         NOR = {
- 	    c:JUD = {
+ 	          c:JUD = {
                 has_land = yes
             }
             any_country = {
@@ -71,7 +71,7 @@ te_judaism.2 = {
                     heritage = samaria_heritage
                     has_land = yes
                 }
-            }
+            } 
             p:687 = {
                 dominant_province_religion = judaism
             }
