@@ -64,6 +64,9 @@ Changelog v1.1.1
 	-made te_barbarians.13 into a minor country event
 		+added localization for English, French, German, Russian and Spanish
 *edited te_barbarians.15 to create a new country and give provinces in scandinavia_region
+*edited te_barbarians.55 and added te_barbarians.56 to create a new country in a great power invaded by huns
+	-creates new countries from provinces that are overrun by barbarians depending on owner state rank
+		+only if province has more than 200 tribesmen of huna or hunnic culture 
 	
 *small update to localization te_text_l_german.yml
 *typo in localization l6_conversions_l_english.yml
