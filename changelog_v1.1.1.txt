@@ -2,6 +2,7 @@ Changelog v1.1.1
 
 *added alternative potential for IRCK3 decision for dividing Roman Empire if tag is no longer ROM so AI can still take decision after having lost a civil war
 	-if primary culture is Roman and heritage is Roman
+*edited IRCK3 decision to block lines for moving ruler to tag WRE or ERE
 
 *added alternatives for Diadochi tags to trigger in te_christianity.72 to target countries for AI if they have lost a civil war
 	-if primary culture is Macedonian with each Diadochi heritage
