@@ -119,7 +119,7 @@ country_decisions = {
 					tag = JUD
 					heritage = judea_heritage
 					tag = SMA
-					heritage = samaria_heritage
+					# no samaria_heritage in vanilla I:R
 				}
 			}
 		}
@@ -186,7 +186,7 @@ country_decisions = {
 					tag = JUD
 					heritage = judea_heritage
 					tag = SMA
-					heritage = samaria_heritage
+					# no samaria_heritage in vanilla I:R
 				}
 			}
 		}
