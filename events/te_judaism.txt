@@ -66,12 +66,7 @@ te_judaism.2 = {
             c:SMA = {
                 has_land = yes
             }
-            any_country = {
-                AND = {
-                    heritage = samaria_heritage
-                    has_land = yes
-                }
-            } 
+            # no samaria_heritage in vanilla I:R
             p:687 = {
                 dominant_province_religion = judaism
             }
