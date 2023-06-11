@@ -87,17 +87,17 @@
 					save_scope_as = new_ERE_ruler
 				}
 
-				scope:new_ERE_ruler = {
-					move_country = ERE
-					every_holdings = {
-						limit = { 
-							is_in_pars_occidentalis_trigger = yes 
-						}
-						holding_owner = {
-							remove_holding = PREV	
-						}	
-					}
-				}
+				#scope:new_ERE_ruler = {
+				#	move_country = ERE
+				#	every_holdings = {
+				#		limit = { 
+				#			is_in_pars_occidentalis_trigger = yes 
+				#		}
+				#		holding_owner = {
+				#			remove_holding = PREV	
+				#		}	
+				#	}
+				#}
 				
 				hidden_effect = {
 					scope:new_ERE_ruler = {
@@ -157,11 +157,11 @@
 					scope:new_ERE = {
 						change_country_tag = ERE
 						#set_capital = 1453 # Constantinople
-						hidden_effect = {
-							p:1453.state = {
-								set_state_capital = 1453
-							}
-						}
+						#hidden_effect = {
+						#	p:1453.state = {
+						#		set_state_capital = 1453
+						#	}
+						#}
 						capital_scope = {
 							increase_province_rank_effect = yes
 						}
@@ -409,17 +409,17 @@
 					save_scope_as = new_WRE_ruler
 				}
 
-				scope:new_WRE_ruler = {
-					move_country = WRE
-					every_holdings = {
-						limit = { 
-							is_in_pars_occidentalis_trigger = no 
-						}
-						holding_owner = {
-							remove_holding = PREV	
-						}	
-					}
-				}
+				#scope:new_WRE_ruler = {
+				#	move_country = WRE
+				#	every_holdings = {
+				#		limit = { 
+				#			is_in_pars_occidentalis_trigger = no 
+				#		}
+				#		holding_owner = {
+				#			remove_holding = PREV	
+				#		}	
+				#	}
+				#}
 				
 				hidden_effect = {
 					scope:new_WRE_ruler = {
@@ -479,11 +479,11 @@
 					scope:new_WRE = {
 						change_country_tag = WRE
 						#set_capital = 1 # Rome
-						hidden_effect = {
-							capital_scope.state = {
-								set_state_capital = capital_scope
-							}
-						}
+						#hidden_effect = {
+						#	capital_scope.state = {
+						#		set_state_capital = capital_scope
+						#	}
+						#}
 						capital_scope = {
 							increase_province_rank_effect = yes
 						}
