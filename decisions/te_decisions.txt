@@ -135,7 +135,7 @@ country_decisions = {
 		}
 
 		allow = {
-			could_change_religion_trigger = {
+			could_change_religion_mani_trigger = {
 				RELIGION = manichaeism
 			}
 		}
@@ -161,7 +161,7 @@ country_decisions = {
 		}
 
 		allow = {
-			could_change_religion_mani_trigger = {
+			could_change_religion_trigger = {
 				RELIGION = manichaeism
 			}
 		}
