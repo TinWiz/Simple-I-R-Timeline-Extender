@@ -51,6 +51,10 @@ Changelog v1.1.1
 *scripted triggers added in te_religion_triggers.txt for christianity and manichaeism with lower requirements for converted pops
 	-10% for christianity and 5% for manichaeism
 		+custom localization tooltips added for these
+
+*removed l6_christian.5.a in option name for te_manichees.14
+*increased random_event on_action for te_manichees.14 from 10 to 15
+	-slightly more spread from pops
 	
 *edited te_christianity.72 to trigger if culture is roman and capital is in Rome 
 	-even if Rome has previously lost a civil war and tag is dynamic, not ROM
