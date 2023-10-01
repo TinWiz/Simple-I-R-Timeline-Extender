@@ -73,9 +73,11 @@ Changelog v1.1.1
 
 *changed truce duration from -1 to 3000 in IRCK3 decision between WRE and ERE
 	-stop error log complaints
-	
-*small update to localization te_text_l_german.yml
-*typo in localization l6_conversions_l_english.yml
+
+*localization updates
+	-small update to localization te_text_l_german.yml
+	-typo in localization l6_conversions_l_english.yml
+	-correction to use Spanish localization for early_christian_community
 
 ##########
 Testing
