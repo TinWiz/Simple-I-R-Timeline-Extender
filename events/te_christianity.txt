@@ -745,11 +745,47 @@ te_christianity.72 = {
 		has_global_variable = christianity_expands
 		OR = {
 			tag = ROM
+			AND = {
+				capital_scope = {
+					is_in_area = roma_area
+				}
+				heritage = roman_heritage
+				primary_culture = roman
+			}
 			tag = MAC
+			AND = {
+				primary_culture = macedonian
+				capital_scope = {
+					is_in_region = macedonia_region
+				}
+				heritage = cassanders_heritage
+			}
 			tag = TRE
+			AND = {
+				primary_culture = macedonian
+				capital_scope = {
+					is_in_region = thrace_region
+				}
+				heritage = thrace_heritage
+			}
 			tag = EGY
+			AND = {
+				primary_culture = macedonian
+				capital_scope = {
+					is_in_region = lower_egypt_region
+				}
+				heritage = ptolemys_heritage
+			}
 			tag = PRY
+			AND = {
+				primary_culture = macedonian
+				heritage = antigonid_heritage
+			}
 			tag = SEL
+			AND = {
+				primary_culture = macedonian
+				heritage = seleucus_heritage
+			}
 			tag = ERE
 			tag = WRE
 		}
@@ -790,8 +826,18 @@ te_christianity.72 = {
 					has_religion = christianity
 				}
 			}
-			add_political_influence = 200
-			add_legitimacy = 70
+			while = {
+				limit = {
+					legitimacy < 70
+				}
+				add_legitimacy = 5
+			}
+			while = {
+				limit = {
+					political_influence < 200
+				}
+				add_political_influence = 20
+			}
 		}
 		else_if = {
 			limit = {
@@ -1542,8 +1588,11 @@ te_christianity.96 = {
 		if = {
 			limit = {
 				NAND = {
-					current_date < 1066.2.2
+					current_date < 1000.10.1
 					dominant_province_religion = christianity
+				}
+				NOT = {
+					owner = { religion = judaism }
 				}
 			}
 			random_pops_in_province = {
@@ -1561,6 +1610,15 @@ te_christianity.96 = {
 						pop_religion = judaism
 					}
 				}
+				set_pop_religion = christianity
+			}
+		}
+		else_if = {
+			limit = {
+				owner = { religion = judaism }
+				dominant_province_religion = judaism
+			}
+			random_pops_in_province = {
 				set_pop_religion = christianity
 			}
 		}
@@ -1584,16 +1642,17 @@ te_christianity.97 = {
 		if = {
 			limit = {
 				NAND = {
-					current_date < 1066.2.2
+					current_date < 1000.10.1
 					#province_id = 1
 					dominant_province_religion = christianity
+				}
+				NOT = {
+					owner = { religion = judaism }
+				}
+				any_pops_in_province = {
+					count > 8
 				}	
 			}
-			#random_pops_in_province = {
-			#	set_pop_religion = christianity
-			#}
-		#}
-		#else = {
 			ordered_pops_in_province = {
 				limit = {
 					NOT = {
@@ -1606,6 +1665,31 @@ te_christianity.97 = {
 					divide = 8
 				}
 				check_range_bounds = no
+				set_pop_religion = christianity
+			}
+		}
+		else_if = {
+			limit = {
+			    owner = { religion = judaism }
+				any_pops_in_province = {
+					count > 8
+				}
+				dominant_province_religion = judaism
+			}
+			random_pops_in_province = {
+				set_pop_religion = christianity
+			}
+			random_pops_in_province = {
+				set_pop_religion = christianity
+			}
+		}
+		else_if = {
+			limit = {
+				any_pops_in_province = {
+					count < 8
+				}
+			}
+			random_pops_in_province = {
 				set_pop_religion = christianity
 			}
 		}		
@@ -1633,7 +1717,7 @@ te_christianity.98 = {
 		}
 		religion_pops_in_country = {
 			target = christianity
-			value >= 20
+			value >= 10 #lowered from 20 v1.1.0.1
 		}
 	}
 

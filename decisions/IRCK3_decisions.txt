@@ -11,7 +11,13 @@
 				government = dictatorship
 				government = imperial_cult
 			}	
-			tag = ROM
+			OR = {	
+				tag = ROM
+				AND = {
+					primary_culture = roman
+					heritage = roman_heritage
+				}	
+			}
 			any_owned_province = {
 				is_in_pars_occidentalis_trigger = yes
 			}
@@ -81,17 +87,17 @@
 					save_scope_as = new_ERE_ruler
 				}
 
-				scope:new_ERE_ruler = {
-					move_country = ERE
-					every_holdings = {
-						limit = { 
-							is_in_pars_occidentalis_trigger = yes 
-						}
-						holding_owner = {
-							remove_holding = PREV	
-						}	
-					}
-				}
+				#scope:new_ERE_ruler = {
+				#	move_country = ERE
+				#	every_holdings = {
+				#		limit = { 
+				#			is_in_pars_occidentalis_trigger = yes 
+				#		}
+				#		holding_owner = {
+				#			remove_holding = PREV	
+				#		}	
+				#	}
+				#}
 				
 				hidden_effect = {
 					scope:new_ERE_ruler = {
@@ -151,11 +157,11 @@
 					scope:new_ERE = {
 						change_country_tag = ERE
 						#set_capital = 1453 # Constantinople
-						hidden_effect = {
-							p:1453.state = {
-								set_state_capital = 1453
-							}
-						}
+						#hidden_effect = {
+						#	p:1453.state = {
+						#		set_state_capital = 1453
+						#	}
+						#}
 						capital_scope = {
 							increase_province_rank_effect = yes
 						}
@@ -247,8 +253,8 @@
 							}
 						}
 						add_truce = {
-							target = root
-							duration = -1
+							target = ROOT
+							duration = 3000
 						}
 						set_variable = severed_roman_half_traditions
 					}
@@ -268,7 +274,7 @@
 				hidden_effect = {
 					add_truce = {
 						target = scope:new_ERE
-						duration = -1
+						duration = 3000
 					}
 					every_character = {
 						limit = {
@@ -403,17 +409,17 @@
 					save_scope_as = new_WRE_ruler
 				}
 
-				scope:new_WRE_ruler = {
-					move_country = WRE
-					every_holdings = {
-						limit = { 
-							is_in_pars_occidentalis_trigger = no 
-						}
-						holding_owner = {
-							remove_holding = PREV	
-						}	
-					}
-				}
+				#scope:new_WRE_ruler = {
+				#	move_country = WRE
+				#	every_holdings = {
+				#		limit = { 
+				#			is_in_pars_occidentalis_trigger = no 
+				#		}
+				#		holding_owner = {
+				#			remove_holding = PREV	
+				#		}	
+				#	}
+				#}
 				
 				hidden_effect = {
 					scope:new_WRE_ruler = {
@@ -473,11 +479,11 @@
 					scope:new_WRE = {
 						change_country_tag = WRE
 						#set_capital = 1 # Rome
-						hidden_effect = {
-							capital_scope.state = {
-								set_state_capital = capital_scope
-							}
-						}
+						#hidden_effect = {
+						#	capital_scope.state = {
+						#		set_state_capital = capital_scope
+						#	}
+						#}
 						capital_scope = {
 							increase_province_rank_effect = yes
 						}
@@ -570,7 +576,7 @@
 						}
 						add_truce = {
 							target = ROOT
-							duration = -1
+							duration = 3000
 						}
 						set_variable = {
 							name = severed_roman_half_traditions
@@ -593,7 +599,7 @@
 				hidden_effect = {
 					add_truce = {
 						target = scope:new_WRE
-						duration = -1
+						duration = 3000
 					}
 					every_character = {
 						limit = {

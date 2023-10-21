@@ -2,13 +2,36 @@ country_decisions = {
 	
 	convert_to_christian = {
 		potential = {
-			OR = {
-				current_date > 953.12.31
-				AND = {
-					current_date > 854.1.1
-					is_ai = no
-				}	
+			current_date > 854.1.1
+			is_ai = no
+			has_global_variable = christianity_expands
+			num_of_cities >= 1
+			potential_change_religion_trigger = {
+				RELIGION = christianity
 			}
+		}
+
+		allow = {
+			could_change_religion_xian_trigger = {
+				RELIGION = christianity
+			}
+		}
+		
+		effect = {
+			change_religion_effect = {
+				RELIGION = christianity
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ai_convert_to_christian = {
+		potential = {
+			is_ai = yes
+			current_date > 953.12.31	
 			has_global_variable = christianity_expands
 			num_of_cities >= 1
 			potential_change_religion_trigger = {
@@ -44,11 +67,47 @@ country_decisions = {
 				factor = 1000
 				OR = {
 					tag = ROM
+					AND = {
+						capital_scope = {
+							is_in_area = roma_area
+						}
+						heritage = roman_heritage
+						primary_culture = roman
+					}
 					tag = MAC
-					tag = PRY
-					tag = EGY
+					AND = {
+						primary_culture = macedonian
+						capital_scope = {
+							is_in_region = macedonia_region
+						}
+						heritage = cassanders_heritage
+					}
 					tag = TRE
+					AND = {
+						primary_culture = macedonian
+						capital_scope = {
+							is_in_region = thrace_region
+						}
+						heritage = thrace_heritage
+					}
+					tag = EGY
+					AND = {
+						primary_culture = macedonian
+						capital_scope = {
+							is_in_region = lower_egypt_region
+						}
+						heritage = ptolemys_heritage
+					}
+					tag = PRY
+					AND = {
+						primary_culture = macedonian
+						heritage = antigonid_heritage
+					}
 					tag = SEL
+					AND = {
+						primary_culture = macedonian
+						heritage = seleucus_heritage
+					}
 					tag = ERE
 					tag = WRE
 				}	
@@ -58,7 +117,9 @@ country_decisions = {
 				factor = 0
 				OR = {
 					tag = JUD
+					heritage = judea_heritage
 					tag = SMA
+					# no samaria_heritage in vanilla I:R
 				}
 			}
 		}
@@ -66,6 +127,33 @@ country_decisions = {
 
 	convert_to_manichaean = {
 		potential = {
+			is_ai = no
+			num_of_cities >= 1
+			potential_change_religion_trigger = {
+				RELIGION = manichaeism
+			}
+		}
+
+		allow = {
+			could_change_religion_mani_trigger = {
+				RELIGION = manichaeism
+			}
+		}
+		
+		effect = {
+			change_religion_effect = {
+				RELIGION = manichaeism
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ai_convert_to_manichaean = {
+		potential = {
+			is_ai = yes
 			num_of_cities >= 1
 			potential_change_religion_trigger = {
 					RELIGION = manichaeism
@@ -96,7 +184,9 @@ country_decisions = {
 				factor = 0
 				OR = {
 					tag = JUD
+					heritage = judea_heritage
 					tag = SMA
+					# no samaria_heritage in vanilla I:R
 				}
 			}
 		}
@@ -106,7 +196,13 @@ country_decisions = {
 		potential = {
 			current_date > 1083.5.11
 			is_ai = yes
-			tag = ROM
+			OR = {
+				tag = ROM
+				AND = {
+					primary_culture = roman
+					heritage = roman_heritage
+				}
+			}	
 			owns = 1
 			owns = 1453
 			NOR = {
