@@ -1,4 +1,4 @@
-Changelog v1.2
+Changelog v1.2.0.1
 
 *deleted deficit.txt events file
 *deleted tribal_flavour_events file
@@ -82,6 +82,7 @@ Changelog v1.2
 	-small update to localization te_text_l_german.yml
 	-typo in localization l6_conversions_l_english.yml
 	-correction to use Spanish localization for early_christian_community
+	-missing close quote in German localization for small_religion_in_country_tooltip
 
 ##########
 Testing
