@@ -80,7 +80,7 @@ Changelog v1.2.0.1
 
 *localization updates
 	-small update to localization te_text_l_german.yml
-	-missing close quotes in German localization for small_religion_in_country_tooltip and minor_religion_in_country_tooltip
+		+missing close quotes in German localization for small_religion_in_country_tooltip and minor_religion_in_country_tooltip
 	-typo in localization l6_conversions_l_english.yml
 	-correction to use Spanish localization for early_christian_community
 
