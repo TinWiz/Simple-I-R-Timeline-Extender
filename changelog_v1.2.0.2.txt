@@ -1,4 +1,10 @@
-Changelog v1.2.0.1
+Changelog v1.2.0.2
+
+*added owner check in te_barbarians.1 ln 21
+	error log complaints
+
+##################
+Changelog 1.2.0.1
 
 *deleted deficit.txt events file
 *deleted tribal_flavour_events file
