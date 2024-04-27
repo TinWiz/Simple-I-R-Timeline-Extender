@@ -1,4 +1,4 @@
-Changelog v1.2.0.2
+Quickfix v1.2.0.2
 
 *added owner check in te_barbarians.1 ln 21
 	error log complaints
