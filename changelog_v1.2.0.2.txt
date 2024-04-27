@@ -91,4 +91,3 @@ Changelog 1.2.0.1
 	-correction to use Spanish localization for early_christian_community
 
 ##########
-Testing
