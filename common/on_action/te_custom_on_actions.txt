@@ -243,6 +243,11 @@ te_custom_on_action_yearly_province_antonine = {
 		has_global_variable = antonine_plague_pandemic
 	}
 
+	events = {
+		te_plagues.13
+		te_plagues.14
+	}
+
 	random_events = {
 		50 = 0
 		50 = te_plagues.10
@@ -254,6 +259,11 @@ te_custom_on_action_yearly_province_cyprian = {
 		current_date > 1001.1.1
 		current_date < 1014.12.31
 		has_global_variable = cyprian_plague_pandemic
+	}
+
+	events = {
+		te_plagues.23
+		te_plagues.24
 	}
 
 	random_events = {
