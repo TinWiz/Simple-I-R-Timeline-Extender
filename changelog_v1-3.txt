@@ -4,6 +4,8 @@
 	-scripted is_huna_neighbor_trigger
 		+inserted to te_barbarians.6 and te_barbarians.7 events triggers to avoid code duplication
 
+*tweaked colour of Christianity from hsv 0.16 to 0.17 for slightly better contrast with Buddhism on map and UI
+
 *added Armenia to ai_convert_to_christian factor 1000  
 	-either ARM tag or capital scope in armenia_region with armenian primary culture and armenia_heritage
 	
