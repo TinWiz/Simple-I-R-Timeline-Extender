@@ -1,6 +1,8 @@
 >> Changelog 1.3 <<
 
-
+*added te_barbarian_triggers.txt file in scripted_triggers  
+	-scripted is_huna_neighbor_trigger
+		+inserted to te_barbarians.6 and te_barbarians.7 events triggers to avoid code duplication
 
 ############################################
 Quickfix v1.2.0.2
