@@ -16,6 +16,10 @@
 	
 *added cooldowns for medium and small countries to te_christianity.96, l6_christian.5, and te_manichees.14
 	-slow down rapid conversion of smaller countries
+*changed [small/medium]_christian_ekklesia_target variable in event file te_christianity.96 to [small/medium]_christian_ekklesia_province
+	-added cooldown variables [small/medium]_christian_ekklesia_country to te_christianity.91–95
+		+country cooldowns 1089 days for medium countries and 3267 for small countries
+	-adjusted province cooldowns to 726 days for medium countries and 1452 days for small countries
 
 *added limit for establishing early_christian_church to countries with more than one territory to te_christianity.91–95 and l6_christian.3
 	-slow down rapid conversion of AI OPMs with large cities
