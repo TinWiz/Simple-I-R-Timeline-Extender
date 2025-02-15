@@ -69,6 +69,24 @@
 	-stacks with te_major– and te_great_germanisch_wanderung_aimod
 		+potential all three aimods stacking adds aggressive 1200, migration_chance 60, trustworthy -35
 
+*corrected late_antiquity_population_decline events for Eastern Roman Empire depending on size
+	-added NAND bracket check for more than 1200 territories and province in occidentalis trigger to te_plagues.40 and te_plagues.41
+		+should not add central modifier to ERE if less than 1201 territories and doesn't own land in occidental part of map
+		+bonus ERE relief and incentive to take IRCK3 split empire decision
+	-added NAND bracket for ERE check with less than 600 territories to NOR trigger for te_plagues.44
+		+should not add orient modifier only if ERE more than 1200 territories with land in occidentalis
+			>AND if ERE with less than 600 territories at all
+		+also added to end of NOR trigger to exclude ERE from general eastern blob check if it has no land occidentalis
+	-added NAND bracket for ERE check with less than 600 territories to OR trigger for te_plagues.45
+		+also added to end of OR trigger to exclude ERE from general eastern blob check if it does not have land in occidentalis		
+*added num_of_cities >= 1200 to OR trigger te_plagues.45 to remove orient late_antiquity_pop_decline modifier from huge eastern blobs
+	-num_of_cities >= 1200 in NOR trigger to te_plagues.44 to avoid adding orient modifier
+	-num_of_cities >= 1200 in AND bracket of OR trigger to te_plagues.40 to add central modifier
+	-num_of_cities >= 1200 in NOR bracket of OR trigger to te_plagues.41 to remove central modifier
+	-num_of_cities < 600 in AND bracket for Eastern Roman Empire relief to te_plagues.45
+	-num_of_cities < 600 in AND bracket for Eastern Roman Empire relief to te_plagues.44
+		+no relief from orient modifier for large ERE
+
 *added new option and localizations te_christianity.41.b:0 for Jewish countries that conquer India
 	-small change to text in te_christianity.10.a:0 localizations
 	-te_christianity_events_l — English, French, German, Russian, and Spanish
