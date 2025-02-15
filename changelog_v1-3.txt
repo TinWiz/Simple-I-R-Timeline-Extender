@@ -8,6 +8,10 @@
 	-scripted is_huna_neighbor_trigger
 		+inserted to te_barbarians.6 and te_barbarians.7 events triggers to avoid code duplication
 
+*added te_barbarians.58 and te_barbarians.59 to change culture in countries overwhelmed by Hunnic or Huna tribesmen from settling barbarian hordes
+	-added to list of events in te_custom_on_actions te_custom_on_action_yearly_country_tribesmen
+*changed defunct event te_barbarians.58 to te_barbarians.80 for now
+
 *tweaked colour of Christianity from hsv 0.16 to 0.17 for slightly better contrast with Buddhism on map and UI
 
 *moved back current_date trigger for archangels from 1053 to 953 in deities file 01_christianity.txt
