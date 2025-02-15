@@ -1582,6 +1582,10 @@ te_christianity.96 = {
 		#current_date < 1133.2.27 #AD 380 Edict of Thessalonica	
 		has_province_modifier = early_christian_community
 		has_owner = yes	
+		NOR = {	
+			has_variable = medium_xian_ekklesia_province
+			has_variable = small_xian_ekklesia_province
+		}
 	}
 
 	immediate = {
@@ -1623,6 +1627,33 @@ te_christianity.96 = {
 			}
 		}
 	}
+
+	option = {
+		if = {
+			limit = {
+				owner = {
+					AND = {
+						num_of_cities <= 100
+						num_of_cities >= 25
+					}
+				}	
+			}
+			set_variable = {
+				name = medium_xian_ekklesia_province
+				days = 726
+			}		
+		}
+		else_if = {
+			limit = {
+				owner = { num_of_cities < 25 }
+			}
+			set_variable = {
+				name = small_xian_ekklesia_province
+				days = 1452
+			}	
+		}
+	}
+	
 }
 
 #Large church or cosmopolitan

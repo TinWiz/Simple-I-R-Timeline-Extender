@@ -333,6 +333,8 @@ l6_christian.5 = {
 		NOR = {
 			religion = manichaeism
 			religion = christianity
+			has_variable = medium_xian_kerygma_target
+			has_variable = small_xian_kerygma_target
 		}
 		NAND = {
 			is_ai = yes
@@ -422,6 +424,30 @@ l6_christian.5 = {
 				}
 				check_range_bounds = no
 				set_pop_religion = christianity
+			}
+		}
+	}
+
+	after = {
+		if = {
+			limit = {
+				AND = {
+					num_of_cities <= 100
+					num_of_cities >= 25
+				}
+			}
+			set_variable = {
+				name = medium_xian_kerygma_target
+				days = 726 
+			}	
+		}
+		else_if = {
+			limit = {
+				num_of_cities < 25
+			}
+			set_variable = {
+				name = small_xian_kerygma_target
+				days = 1452
 			}
 		}
 	}
