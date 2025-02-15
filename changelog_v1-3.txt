@@ -1,5 +1,19 @@
 >> Changelog 1.3 <<
 
+*added new events te_plagues.13 for Antonine plague and te_plagues.23 for Cyprian plague province territory spread 
+	-added new province outbreak and city outbreak modifiers, separated quarantine modifiers
+		+no additional local_unrest in outbreak, but spreads to provinces
+	-added to te_custom_on_action_yearly_province_antonine and te_custom_on_action_yearly_province_cyprian
+	-new option in plagues events for player to choose to allow spread with no quarantine
+		+AI will never choose this option
+	-localization for English, French, German, Russian, and Spanish
+		+modifier text in te_text_l_[language].yml
+		+event text in te_plagues_events_l_[language].yml
+	-added cyprian_plague_epidemic_outbreak_town province modifier for smaller cities, with all text localizations
+	-extra province events te_plagues.14 and te_plagues.24 to remove plague from provinces with only 1 pop remaining
+		+added to te_custom_on_action_yearly province_antonine and te_custom_on_action_yearly_province_cyprian
+		+will not rescue pops with recent outbreaks, so some provinces will still empty out
+
 *lowered religious technology table in half from 0.01 to 0.005
 	-omen balance issues in late timeline
 	-more in line with oratory tech progress
@@ -50,6 +64,10 @@
 	-added aimod te_major_germanisch_wanderung_aimod for germanic countries bordering a major power
 		+400 aggressive, 20 migration_chance and -10 trustworthy
 		+should stack if bordering both great and major powers
+*added te_minor_germanisch_wanderung_aimod for germanic countries bordering non-germanic regional_power or with 2 or more non-germanic major_power neighbours
+	-aggressive 200, migration_chance 10, trustworthy -5
+	-stacks with te_major– and te_great_germanisch_wanderung_aimod
+		+potential all three aimods stacking adds aggressive 1200, migration_chance 60, trustworthy -35
 
 *added new option and localizations te_christianity.41.b:0 for Jewish countries that conquer India
 	-small change to text in te_christianity.10.a:0 localizations
