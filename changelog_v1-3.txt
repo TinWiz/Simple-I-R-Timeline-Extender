@@ -4,6 +4,12 @@
 	-scripted is_huna_neighbor_trigger
 		+inserted to te_barbarians.6 and te_barbarians.7 events triggers to avoid code duplication
 
+*added Armenia to ai_convert_to_christian factor 1000  
+	-either ARM tag or capital scope in armenia_region with armenian primary culture and armenia_heritage
+	
+*added cooldowns for medium and small countries to te_christianity.96, l6_christian.5, and te_manichees.14
+	-slow down rapid conversion of smaller countries
+
 ############################################
 Quickfix v1.2.0.2
 
