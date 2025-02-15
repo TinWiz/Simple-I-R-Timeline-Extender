@@ -22,6 +22,8 @@
 	-rare player with 1 territory would not get flavour events
 		+can still build church with St. Peter deity on_activate effect
 
+*added Lugdunum (province_id 2301) to te_christianity.94 to place early_christian_church if population over 20 (city)
+
 *added NOT bracket for te_judaism.1 for Jewish countries
 	-event out of place if India already Jewish
 
