@@ -1,5 +1,9 @@
 >> Changelog 1.3 <<
 
+*lowered religious technology table in half from 0.01 to 0.005
+	-omen balance issues in late timeline
+	-more in line with oratory tech progress
+
 *added te_barbarian_triggers.txt file in scripted_triggers  
 	-scripted is_huna_neighbor_trigger
 		+inserted to te_barbarians.6 and te_barbarians.7 events triggers to avoid code duplication
