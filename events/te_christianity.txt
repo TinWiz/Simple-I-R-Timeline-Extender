@@ -1112,8 +1112,10 @@ te_christianity.91 = {
 				has_variable = early_xian_persecution
 			}
 		}
-		NOT = {
+		NOR = {
 			religion = manichaeism
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
 		}
 	}
 
@@ -1174,6 +1176,7 @@ te_christianity.91 = {
 			}
 			if = {
 				limit = {
+					root = { num_of_cities > 1 }
 					OR = {
 						total_population > 80
 						AND = {
@@ -1192,6 +1195,30 @@ te_christianity.91 = {
 					duration = 144000
 				}
 			}
+		}
+	}
+
+	option = {
+		if = {
+			limit = {
+				AND = {
+					num_of_cities <= 100
+					num_of_cities > 10
+				}
+			}
+			set_variable = {
+				name = medium_xian_ekklesia_country
+				days = 1089
+			}		
+		}
+		else_if = {
+			limit = {
+				num_of_cities <= 10
+			}
+			set_variable = {
+				name = small_xian_ekklesia_country
+				days = 3267
+			}	
 		}
 	}
 }
@@ -1219,8 +1246,10 @@ te_christianity.92 = {
 				has_variable = early_xian_persecution
 			}
 		}
-		NOT = {
+		NOR = {
 			religion = manichaeism
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
 		}
 	}
 
@@ -1266,6 +1295,7 @@ te_christianity.92 = {
 			}
 			if = {
 				limit = {
+					root = { num_of_cities > 1 }
 					OR = {
 						total_population > 80
 						AND = {
@@ -1285,6 +1315,30 @@ te_christianity.92 = {
 				}
 			}
 		}	
+	}
+
+	option = {
+		if = {
+			limit = {
+				AND = {
+					num_of_cities <= 100
+					num_of_cities > 10
+				}
+			}
+			set_variable = {
+				name = medium_xian_ekklesia_country
+				days = 1089
+			}		
+		}
+		else_if = {
+			limit = {
+				num_of_cities <= 10
+			}
+			set_variable = {
+				name = small_xian_ekklesia_country
+				days = 3267
+			}	
+		}
 	}
 }
 
@@ -1315,8 +1369,10 @@ te_christianity.93 = {
 				has_variable = early_xian_persecution
 			}
 		}
-		NOT = {
+		NOR = {
 			religion = manichaeism
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
 		}
 	}
 	
@@ -1372,6 +1428,7 @@ te_christianity.93 = {
 
 			if = {
 				limit = {
+					root = { num_of_cities > 1 }
 					OR = {
 						total_population > 80
 						AND = {
@@ -1390,6 +1447,30 @@ te_christianity.93 = {
 					duration = 144000
 				}
 			}	 
+		}
+	}
+
+	option = {
+		if = {
+			limit = {
+				AND = {
+					num_of_cities <= 100
+					num_of_cities > 10
+				}
+			}
+			set_variable = {
+				name = medium_xian_ekklesia_country
+				days = 1089
+			}		
+		}
+		else_if = {
+			limit = {
+				num_of_cities <= 10
+			}
+			set_variable = {
+				name = small_xian_ekklesia_country
+				days = 3267
+			}	
 		}
 	}
 }
@@ -1418,8 +1499,10 @@ te_christianity.94 = {
 				has_variable = early_xian_persecution
 			}
 		}
-		NOT = {
+		NOR = {
 			religion = manichaeism
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
 		}
 	}
 
@@ -1466,6 +1549,7 @@ te_christianity.94 = {
 			}
 			if = {
 				limit = {
+					root = { num_of_cities > 1 }
 					total_population > 80		
 				}	
 				add_permanent_province_modifier = {
@@ -1480,6 +1564,30 @@ te_christianity.94 = {
 			}
 		}	
 	}	
+
+	option = {
+		if = {
+			limit = {
+				AND = {
+					num_of_cities <= 100
+					num_of_cities > 10
+				}
+			}
+			set_variable = {
+				name = medium_xian_ekklesia_country
+				days = 1089
+			}		
+		}
+		else_if = {
+			limit = {
+				num_of_cities <= 10
+			}
+			set_variable = {
+				name = small_xian_ekklesia_country
+				days = 3267
+			}	
+		}
+	}
 }
 
 #Christianity Expands — Anatolia 
@@ -1509,8 +1617,10 @@ te_christianity.95 = {
 				has_variable = early_xian_persecution
 			}
 		}
-		NOT = {
+		NOR = {
 			religion = manichaeism
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
 		}
 	}
 	
@@ -1555,6 +1665,7 @@ te_christianity.95 = {
 			}
 			if = {
 				limit = {
+					root = { num_of_cities > 1 }
 					total_population > 80
 				}	
 				add_permanent_province_modifier = {
@@ -1567,6 +1678,28 @@ te_christianity.95 = {
 					duration = 144000
 				}
 			}	 
+		}
+	}
+
+	option = {
+		if = {
+			limit = {
+				AND = {
+					num_of_cities <= 100
+					num_of_cities > 10
+				}
+			}
+			set_variable = {
+				name = medium_xian_ekklesia_country
+				days = 1089
+			}		
+		}
+		else_if = {
+			limit = { num_of_cities <= 10 }
+			set_variable = {
+				name = small_xian_ekklesia_country
+				days = 3267
+			}	
 		}
 	}
 }

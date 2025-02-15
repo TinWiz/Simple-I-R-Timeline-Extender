@@ -228,6 +228,7 @@ l6_christian.3 = {
 			}
 			if = {
 				limit = {
+					root = { num_of_cities > 1 }
 					OR = {
 						total_population > 80
 						AND = {
