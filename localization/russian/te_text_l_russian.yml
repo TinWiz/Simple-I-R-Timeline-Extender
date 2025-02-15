@@ -48,11 +48,22 @@
  desc_christian_church_embelishment:0 "Первоначально довольно скромное строение, наш собор был украшен щедрыми пожертвованиями верующих христиан и заступничеством св. Петра. С каждым поколением собор совершенствуется, и со временем его внешний вид может правильно отражать резиденцию епископа как преемника апостолов."
 
  #####PLAGUES#####:0 ""
- antonine_plague_epidemic:0 "Антонинская Эпидемия чумы"
- desc_antonine_plague_epidemic:0 "Вспышка смертельной болезни поразила эту провинцию."
+ antonine_plague_epidemic_quarantine:0 "Антонинская Эпидемия чумы"
+ desc_antonine_plague_epidemic_quarantine:0 "Этот город находится на карантине во время смертельной пандемии."
+ cyprian_plague_epidemic_quarantine:0 "Эпидемия кипрской чумы"
+ desc_cyprian_plague_epidemic_quarantine:0 "Этот город находится на карантине во время смертельной пандемии."
+ cyprian_plague_epidemic_quarantown:0 "Эпидемия кипрской чумы"
+ desc_cyprian_plague_epidemic_quarantown:0 "Этот город находится на карантине во время смертельной пандемии."
 
- cyprian_plague_epidemic:0 "Эпидемия кипрской чумы"
- desc_cyprian_plague_epidemic:0 "Смертельная болезнь заразила здесь население."
+ plague_outbreak_province:0 "Вспышка чумы"
+ desc_plague_outbreak_province:0 "Вспышка смертельной болезни поразила эту провинцию."
+
+ antonine_plague_epidemic_outbreak_city:0 "Антонинская Эпидемия чумы"
+ desc_antonine_plague_epidemic_outbreak_city:0 "Смертельная болезнь заразила здесь население."
+ cyprian_plague_epidemic_outbreak_city:0 "Эпидемия кипрской чумы"
+ desc_cyprian_plague_epidemic_outbreak_city:0 "Смертельная болезнь заразила здесь население."
+ cyprian_plague_epidemic_outbreak_town:0 "Вспышка чумы"
+ desc_cyprian_plague_epidemic_outbreak_town:0 "Вспышка смертельной болезни поразила эту провинцию."
 
  #####COUNTRY MODIFIERS#####:0 ""
  cursed_by_elohim:0 "Проклят Элохимом"
