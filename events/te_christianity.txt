@@ -311,13 +311,25 @@ te_christianity.7 = {
 	desc = {
 		first_valid = {
 			triggered_desc = { # Rome
-				trigger = { tag = ROM }	
+				trigger = { 
+					OR = {	
+						tag = ROM
+						AND = {
+							primary_culture = roman
+							heritage = roman_heritage
+						}
+					}	
+				}
 				desc = "te_christianity.7.desc_1"
 			}
 			triggered_desc = { # Ruma?
 				trigger = {
-					NOT = {
+					NOR = {
 						tag = ROM
+						AND = {
+							primary_culture = roman
+							heritage = roman_heritage
+						}
 					}
 				}
 				desc = "te_christianity.7.desc_2"
