@@ -23,6 +23,8 @@
 *scripted trigger is_pentarchy_imperium_ai_trigger
 	-added to ai_convert_to_christian factor 1000 in te_decisions
 	-excludes Jewish and Manichaean countries
+*scripted_trigger is_diadochi_descendant_ai_trigger to te_religion_triggers.txt for use in te_christianity.72 and ai_convert_to_christian decision in te_decisions.txt
+	-added Epirus, tag EPI or epirote_heritage with primary culture epirote and capital in epirus_area
 *added AND trigger for te_decisions ai_convert_to_christian to countries not in hellenic culture group AND with roman_pantheon religion
 	-more likely to convert away from hellenism if not of hellenic culture
 	
