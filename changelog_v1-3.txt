@@ -10,6 +10,10 @@
 
 *tweaked colour of Christianity from hsv 0.16 to 0.17 for slightly better contrast with Buddhism on map and UI
 
+*moved back current_date trigger for archangels from 1053 to 953 in deities file 01_christianity.txt
+	-sects of angel worshippers existed in 3rd century historically
+	-no need for such a long lag time when saints theosis events now require Christianity to trigger
+
 *added Armenia to ai_convert_to_christian factor 1000  
 	-either ARM tag or capital scope in armenia_region with armenian primary culture and armenia_heritage
 *scripted trigger is_pentarchy_imperium_ai_trigger
