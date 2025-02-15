@@ -25,6 +25,12 @@
 	-small change to text in te_christianity.10.a:0 localizations
 	-te_christianity_events_l — English, French, German, Russian, and Spanish
 
+*corrected triggered_desc in te_christianity.7
+	-trigger for countries that are either ROM tag or have Roman primary culture and roman_heritage
+		+in case ROM tag lost in civil war or IRCK3 split decision
+	-te_christianity_events_l localization edits for te_christianity.7.desc_2:1 in English, French, German, Russian, and Spanish
+		+last sentence altered for tonal consideration with alternative conquests of Rome
+
 ############################################
 Quickfix v1.2.0.2
 
