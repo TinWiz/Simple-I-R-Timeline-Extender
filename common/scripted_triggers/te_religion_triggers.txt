@@ -214,3 +214,12 @@ is_diadochi_descendant_ai_trigger = {
 		}
 	}	
 }
+
+sirte_occident_blob_trigger = {
+	AND = {
+		num_of_cities > 1000
+		any_owned_province = {
+			is_in_pars_occidentalis_trigger = yes
+		}
+	}
+}
