@@ -363,3 +363,25 @@ te_late_antiquity_deurbanization = {
 		te_plagues.51
 	}
 }
+
+################ sirte_occident_blob_trigger RANDOM EVENTS SHIFT ###################
+
+te_custom_on_action_monthly_country_xian_blob = {
+
+	trigger = {
+		current_date > 753.3.25
+		sirte_occident_blob_trigger = yes
+	}
+	events = {
+
+	}
+
+	random_events = {
+		75 = 0
+		5 = te_christianity.195
+		5 = te_christianity.194
+		5 = te_christianity.193
+		5 = te_christianity.192
+		5 = te_christianity.191
+	}
+}
