@@ -1,6 +1,8 @@
 ﻿l_spanish:
- barbarian_fury_discipline:0 "Tenaz"
- barbarian_fury_rage:0 "Furioso"
+ barbarian_fury_discipline_1:0 "Tenaz"
+ barbarian_fury_rage_1:0 "Furioso"
+ barbarian_fury_discipline_2:0 "Tenaz"
+ barbarian_fury_rage_2:0 "Furioso"
  barbarian_invasion_skirmish:0 "Bárbaros Migrando"
  barbarian_invasion_war:0 "¡Bárbaros Invadiendo!"
 
