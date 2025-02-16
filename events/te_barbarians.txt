@@ -18,7 +18,7 @@ te_barbarians.1 = {
                     country_culture_group = germanic
                     p:5142 = {
                         any_neighbor_province = { 
-			    exists = owner
+			                exists = owner
                             owner = {
                                 country_culture_group = germanic
                             } 
@@ -1018,41 +1018,42 @@ te_barbarians.50 = {
     hidden = yes
 
     trigger = {
+        current_date > 1034.5.1
+        current_date < 1104.4.30
         NOT = {
-           has_variable = barbarian_fury
+           has_variable = barbarian_fury_1
         }   
     }
 
     immediate = {
         c:BAR = {
             every_army = {
-                add_morale = 1
+                add_morale = 0.5
             }
             every_unit = {
                 limit = {
                     NOT = {
-                        has_unit_modifier = barbarian_fury_rage
+                        has_unit_modifier = barbarian_fury_rage_1
                     }
                 }
                 add_unit_modifier = {
-                    name = "barbarian_fury_rage"
+                    name = "barbarian_fury_rage_1"
                 }
             }
             if = {
                 limit = {
-                    NOR = {
-                        has_country_modifier = barbarian_fury_discipline
-                        has_variable = barbarian_fury
+                    NOT = {
+                        has_country_modifier = barbarian_fury_discipline_1
                     }
                 }
                 add_country_modifier = {
-                    name = "barbarian_fury_discipline"
+                    name = "barbarian_fury_discipline_1"
                     duration = 360
                 }
             }
         } 
         set_variable = {
-            name = barbarian_fury
+            name = barbarian_fury_1
             days = 185
          }
     }
@@ -2848,4 +2849,57 @@ te_barbarians.99 = {
     }
 }
 
+############################
 
+te_barbarians.150 = {
+    type = country_event 
+    hidden = yes
+
+    trigger = {
+        current_date > 1104.5.1
+        NOR = {
+            has_variable = barbarian_fury_1
+            has_variable = barbarian_fury_2
+        }   
+    }
+
+    immediate = {
+        c:BAR = {
+            every_army = {
+                add_morale = 1
+            }
+            every_unit = {
+                limit = {
+                    NOR = {
+                        has_unit_modifier = barbarian_fury_rage_1
+                        has_unit_modifier = barbarian_fury_rage_2
+                    }
+                }
+                add_unit_modifier = {
+                    name = "barbarian_fury_rage_2"
+                }
+            }
+            if = {
+                limit = {
+                    has_country_modifier = barbarian_fury_discipline_1
+                }
+                remove_country_modifier = barbarian_fury_discipline_1
+            }
+            if = {
+                limit = {
+                    NOT = {
+                        has_country_modifier = barbarian_fury_discipline_2
+                    }
+                }
+                add_country_modifier = {
+                    name = "barbarian_fury_discipline_2"
+                    duration = 360
+                }
+            }
+        } 
+        set_variable = {
+            name = barbarian_fury_2
+            days = 185
+         }
+    }
+}   
