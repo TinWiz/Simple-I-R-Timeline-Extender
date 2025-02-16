@@ -21,7 +21,7 @@
 *added te_barbarian_triggers.txt file in scripted_triggers  
 	-scripted is_huna_neighbor_trigger
 		+inserted to te_barbarians.6 and te_barbarians.7 events triggers to avoid code duplication
-
+*cleared errant brace from te_barbarians.57 commented out
 *added te_barbarians.58 and te_barbarians.59 to change culture in countries overwhelmed by Hunnic or Huna tribesmen from settling barbarian hordes
 	-added to list of events in te_custom_on_actions te_custom_on_action_yearly_country_tribesmen
 *changed defunct event te_barbarians.58 to te_barbarians.80 for now
@@ -54,6 +54,13 @@
 	-added Epirus, tag EPI or epirote_heritage with primary culture epirote and capital in epirus_area
 *added AND trigger for te_decisions ai_convert_to_christian to countries not in hellenic culture group AND with roman_pantheon religion
 	-more likely to convert away from hellenism if not of hellenic culture
+
+*added scripted_trigger sirte_occident_blob_trigger for num_of_cities > 1000 with any_owned_province is_in_pars_occidentalis_trigger yes
+	-added te_custom_on_action_monthly_country_xian_blob to te_monthly_country_pulse and te_custom_on_actions
+		+duplicates of te_christianity events 91–95 added, te_christianity.191–195
+			> sirte_occident_blob trigger no added 91–95, yes te_christianity.191–195
+	-huge blobs with any provinces in the western part of the map will switch to a monthly pulse for establishing early_christian_community or early_christian_church modifiers
+		+tend to have very slow growth because target regions are spread out
 	
 *added cooldowns for medium and small countries to te_christianity.96, l6_christian.5, and te_manichees.14
 	-slow down rapid conversion of smaller countries
@@ -83,21 +90,21 @@
 		+potential all three aimods stacking adds aggressive 1200, migration_chance 60, trustworthy -35
 
 *corrected late_antiquity_population_decline events for Eastern Roman Empire depending on size
-	-added NAND bracket check for more than 1200 territories and province in occidentalis trigger to te_plagues.40 and te_plagues.41
-		+should not add central modifier to ERE if less than 1201 territories and doesn't own land in occidental part of map
+	-added NAND bracket check for more than 1000 territories and province in occidentalis trigger to te_plagues.30 and te_plagues.31
+		+should not add central modifier to ERE if less than 1000 territories and doesn't own land in occidental part of map
 		+bonus ERE relief and incentive to take IRCK3 split empire decision
-	-added NAND bracket for ERE check with less than 600 territories to NOR trigger for te_plagues.44
-		+should not add orient modifier only if ERE more than 1200 territories with land in occidentalis
-			>AND if ERE with less than 600 territories at all
+	-added NAND bracket for ERE check with less than 500 territories to NOR trigger for te_plagues.34
+		+should not add orient modifier only if ERE more than 1000 territories with land in occidentalis
+			>AND if ERE with less than 500 territories at all
 		+also added to end of NOR trigger to exclude ERE from general eastern blob check if it has no land occidentalis
-	-added NAND bracket for ERE check with less than 600 territories to OR trigger for te_plagues.45
+	-added NAND bracket for ERE check with less than 500 territories to OR trigger for te_plagues.35
 		+also added to end of OR trigger to exclude ERE from general eastern blob check if it does not have land in occidentalis		
-*added num_of_cities >= 1200 to OR trigger te_plagues.45 to remove orient late_antiquity_pop_decline modifier from huge eastern blobs
-	-num_of_cities >= 1200 in NOR trigger to te_plagues.44 to avoid adding orient modifier
-	-num_of_cities >= 1200 in AND bracket of OR trigger to te_plagues.40 to add central modifier
-	-num_of_cities >= 1200 in NOR bracket of OR trigger to te_plagues.41 to remove central modifier
-	-num_of_cities < 600 in AND bracket for Eastern Roman Empire relief to te_plagues.45
-	-num_of_cities < 600 in AND bracket for Eastern Roman Empire relief to te_plagues.44
+*added num_of_cities >= 1000 to OR trigger te_plagues.35 to remove orient late_antiquity_pop_decline modifier from huge eastern blobs
+	-num_of_cities >= 1000 in NOR trigger to te_plagues.34 to avoid adding orient modifier
+	-num_of_cities >= 1000 in AND bracket of OR trigger to te_plagues.30 to add central modifier
+	-num_of_cities >= 1000 in NOR bracket of OR trigger to te_plagues.31 to remove central modifier
+	-num_of_cities < 500 in AND bracket for Eastern Roman Empire relief to te_plagues.35
+	-num_of_cities < 500 in AND bracket for Eastern Roman Empire relief to te_plagues.34
 		+no relief from orient modifier for large ERE
 
 *added new option and localizations te_christianity.41.b:0 for Jewish countries that conquer India
