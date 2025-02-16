@@ -1,6 +1,8 @@
 ﻿l_german:
- barbarian_fury_discipline:0 "Verbissen"
- barbarian_fury_rage:0 "Wütend"
+ barbarian_fury_discipline_1:0 "Verbissen"
+ barbarian_fury_rage_1:0 "Wütend"
+ barbarian_fury_discipline_2:0 "Verbissen"
+ barbarian_fury_rage_2:0 "Wütend"
  barbarian_invasion_skirmish:0 "Barbaren wandern"
  barbarian_invasion_war:0 "Einmarsch der Barbaren!"
 
