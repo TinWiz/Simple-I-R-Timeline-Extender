@@ -1,6 +1,8 @@
 ﻿l_russian:
- barbarian_fury_discipline:0 "Упорный" 
- barbarian_fury_rage:0 "Яростный"
+ barbarian_fury_discipline_1:0 "Упорный" 
+ barbarian_fury_rage_1:0 "Яростный"
+ barbarian_fury_discipline_2:0 "Упорный" 
+ barbarian_fury_rage_2:0 "Яростный"
  barbarian_invasion_skirmish:0 "Мигрирующие варвары"
  barbarian_invasion_war:0 "Вторжение варваров!"
 
