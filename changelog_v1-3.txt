@@ -28,6 +28,13 @@
 
 *tweaked colour of Christianity from hsv 0.16 to 0.17 for slightly better contrast with Buddhism on map and UI
 
+*changed te_saints.txt events names to more historical transliterations and localized nicknames
+	-localizations added to te_saints_events_l_[language].yml
+		+small correction in Russian localization deities\deities_christianity_l_russian.yml
+	-also changed te_manichees.2 event for Mani to add NICKNAME localizations
+		+te_manichees_events_l_[language].yml
+	-corrected birth year for St. John in te_saints.4
+
 *moved back current_date trigger for archangels from 1053 to 953 in deities file 01_christianity.txt
 	-sects of angel worshippers existed in 3rd century historically
 	-no need for such a long lag time when saints theosis events now require Christianity to trigger
@@ -103,91 +110,4 @@ Quickfix v1.2.0.2
 *added owner check in te_barbarians.1 ln 21
 	error log complaints
 
-##################
-Changelog 1.2.0.1
-
-*deleted deficit.txt events file
-*deleted tribal_flavour_events file
-*deleted integrated_culture_decisions_te file
-*removed CIVIL_WAR_STATES_THRESHOLD and CIVIL_WAR_CITIES_THRESHOLD lines from te_defines.txt
-  -no longer needed because tag limit has been increased to 8192!
-
-*added alternative potential for IRCK3 decision for dividing Roman Empire if tag is no longer ROM so AI can still take decision after having lost a civil war
-	-if primary culture is Roman and heritage is Roman
-*edited IRCK3 decision to block lines for moving ruler to tag WRE or ERE
-
-*added alternatives for Diadochi tags to trigger in te_christianity.72 to target countries for AI if they have lost a civil war
-	-if primary culture is Macedonian with each Diadochi heritage
-	-also added to ai_convert_to_christian in te_decisions
-
-*added judea_heritage to trigger for te_judaism.2
-	-also any country with judaism religion and capital in palestine_region
-*added judea_heritage to te_decisions for ai_will_do factor 0
-
-*added option for ai_constantinople in te_decisions for a country with roman culture and heritage
-
-*added NAND trigger to l6_christian.5 to slow spread of Christianity in non-Hellenic countries before 954 AUC / 200 CE
-*added dominant_province_religion christianity to NOR triggers for l6_christian.5
-  -will no longer trigger on provinces with a christian majority
-    +should not convert all pops of non-christian countries
-*edited trigger for l6_christan.4 to limit effect if global_variable jewish_diaspora is not set	
-*organized script for l6_christian.3 to trigger even if tag is JUD or SMA
-*set end date for l6_christian.2 on 818.1.25 =, 65AD
-
-*edited political influence and legitimacy effects to te_christianity.72 to add while loops
-
-*lowered trigger dates for full effects of te_christianity.96 and te_christianity.97 to 1000 AUC 
-  -balance for provinces with early_christian_community or early_christian_church
-	+edited te_christianity.96 and te_christianity.97 to limit effect if country religion is judaism
-
-*added baltic culture group and matrist religion to NOR triggers for te_manichees events
-
-*removed NOT any_province is_in_region fezzan_region from trigger in te_plagues.3* files
-  -not needed on the vanilla map
-
-*removed tag ISR from te_judaism.2
-  -leftover Invictus tag for Judea
-
-*renamed prices file 00_hardcoded to te_hardcoded
-  -removed all prices except buy_military_tradition, which was increased from 80 to 120
-    +do not need to copy all of the base game prices
-
-*edited te_decisions to split ai and player only decisions to convert to christianity and manichaeism
-	-edited player decisions to lower requirement for converted pops
-*scripted triggers added in te_religion_triggers.txt for christianity and manichaeism with lower requirements for converted pops
-	-10% for christianity and 5% for manichaeism
-		+custom localization tooltips added for these
-
-*removed l6_christian.5.a in option name for te_manichees.14
-*increased random_event on_action for te_manichees.14 from 10 to 15
-	-slightly more spread from pops
-	
-*edited te_christianity.72 to trigger if culture is roman and capital is in Rome 
-	-even if Rome has previously lost a civil war and tag is dynamic, not ROM
-*edited te_christianity.98 to trigger and create minor christian character if 10% of pops are christian
-	-lowered from 20%
-	
-*added limit religion = christianity for all christianity saints to trigger theosis events
-	-also armenian_heritage and primary_culture = armenian to st_nathanael_bartholomew
-
-*added tag BHA to te_barbarians.6 and te_barbarians.7
-	-also to option te_judaism.21.b
-	
-*added stability hit to te_barbarians.13 and scandian_invasion variable to te_barbarians.13 and te_barbarians.15
-	-made te_barbarians.13 into a minor country event
-		+added localization for English, French, German, Russian and Spanish
-*edited te_barbarians.15 to create a new country and give provinces in scandinavia_region
-*edited te_barbarians.55 and added te_barbarians.56 to create a new country in a great power invaded by huns
-	-creates new countries from provinces that are overrun by barbarians depending on owner state rank
-		+only if province has more than 200 tribesmen of huna or hunnic culture 
-
-*changed truce duration from -1 to 3000 in IRCK3 decision between WRE and ERE
-	-stop error log complaints
-
-*localization updates
-	-small update to localization te_text_l_german.yml
-		+missing close quotes in German localization for small_religion_in_country_tooltip and minor_religion_in_country_tooltip
-	-typo in localization l6_conversions_l_english.yml
-	-correction to use Spanish localization for early_christian_community
-
-##########################################################################
+############################################
