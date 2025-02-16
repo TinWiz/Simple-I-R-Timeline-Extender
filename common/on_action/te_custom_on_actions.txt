@@ -184,6 +184,12 @@ te_custom_on_action_barbarians_morale_pulse = {
 		}
 		OR = {
 			AND = {
+				#has_global_variable = germanic_migration
+				current_date > 1034.5.1
+				current_date < 1104.4.30
+				num_of_cities >= 10
+			}
+			AND = {
 				has_global_variable = huns_second_wave
 				current_date > 1148.3.15
 				current_date < 1208.11.15
@@ -191,9 +197,9 @@ te_custom_on_action_barbarians_morale_pulse = {
 			}
 			AND = {
 				has_variable = huna_invasion
-				current_date > 1104.04.11
+				current_date > 1104.05.1
 				current_date < 1144.12.15
-				num_of_cities >= 10
+				num_of_cities >= 25
 			}
 			AND = {		
 				has_variable = huna_invasion_again
@@ -210,6 +216,7 @@ te_custom_on_action_barbarians_morale_pulse = {
 	random_events = {
 		50 = 0
 		50 = te_barbarians.50
+		50 = te_barbarians.150
 	}
 
 }
@@ -238,6 +245,7 @@ te_custom_on_action_yearly_country_tribesmen = {
 
 te_custom_on_action_yearly_province_antonine = {
 	trigger = {
+		exists = owner
 		current_date > 917.1.1
 		current_date < 932.12.31
 		has_global_variable = antonine_plague_pandemic
@@ -256,6 +264,7 @@ te_custom_on_action_yearly_province_antonine = {
 
 te_custom_on_action_yearly_province_cyprian = {
 	trigger = {
+		exists = owner
 		current_date > 1001.1.1
 		current_date < 1014.12.31
 		has_global_variable = cyprian_plague_pandemic
