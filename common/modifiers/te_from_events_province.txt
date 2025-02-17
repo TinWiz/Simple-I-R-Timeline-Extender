@@ -154,4 +154,8 @@ late_antiquity_decentralization_settlement = {
 	local_migration_attraction = 15
 }
 
+manichaean_temple = {
+	local_happiness_for_wrong_religion_modifier = 0.025
+}
+
 #########################################
