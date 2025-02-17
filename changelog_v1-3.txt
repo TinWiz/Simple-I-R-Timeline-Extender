@@ -14,6 +14,25 @@
 		+added to te_custom_on_action_yearly province_antonine and te_custom_on_action_yearly_province_cyprian
 		+will not rescue pops with recent outbreaks, so some provinces will still empty out
 
+*created new te_rel_flavor.6 event for players only (will not fire for AI) to allow increased Manichaean spread in capital
+	-loyalty modifiers added to common\loyalty\te_events.txt allowed_manichees or disallowed_manichees, manichee_appreciation or manichee_resentment
+		+affects characters with any religious office trigger or Manichaean characters
+			>adds or subtracts 10 loyalty to religious offices for 60 months
+			>adds or subtracts 20 loyalty to Manichaean characters for 60 months
+	-fires once only for rulers that have at least one of a list of personality traits, then sets a variable in the NOT trigger
+		+also adds a variable manichaean_supplication_cooldown of 2100 days
+	-added local_happiness_for_wrong_religion_modifier in common\modifier_icons\te_modifier_icons.txt
+		+for te_from_events_province.txt modifier manichaean_temple
+	-added to te_custom_on_actions.txt te_custom_on_action_yearly_country_rel_flavor
+	-localizations added to te_rel_flavor_events_l_[language].yml
+*added new event te_rel_flavor.7 to remove modifier added by te_rel_flavor.6 if ruler does not have variable
+	-NOT if country is_republic
+*added te_manichees.4 for province modifier manichaean_temple added in te_rel_flavor.6 to convert pops to manichaeism
+	-listed in on_action te_custom_on_actions.txt te_custom_on_action_yearly_province_churches
+	-localizations added to te_text_l_[language].yml
+*edited te_manichees.3 and te_manichees.30 to fire if the dominant_province_religion in the capital_scope is manichaeism
+	-creates Manichaean character, required for potential trigger of conversion decision
+
 *lowered religious technology table in half from 0.01 to 0.005
 	-omen balance issues in late timeline
 	-more in line with oratory tech progress
@@ -33,6 +52,11 @@
 	-localizations added in te_text_l_[language].yml files
 
 *tweaked colour of Christianity from hsv 0.16 to 0.17 for slightly better contrast with Buddhism on map and UI
+
+*added new hidden character events te_rel_flavor.3–5 for converting characters if communities and/or churches destroyed
+	-edited te_rel_flavor.1 and te_rel_flavor.2 events to trigger te_rel_flavor.3–5
+		+character variable xian_community_killer value added for te_rel_flavor.1 as trigger check
+	-added check for loyalty modifiers spared_xians_hate and persecuted_xians_glee to remove from new convert characters
 
 *changed te_saints.txt events names to more historical transliterations and localized nicknames
 	-localizations added to te_saints_events_l_[language].yml
@@ -74,6 +98,8 @@
 	-rare player with 1 territory would not get flavour events
 		+can still build church with St. Peter deity on_activate effect
 
+*added Rome province_id to te_christianity.94 and te_christianity.194 to add early_christian_church if earlier destroyed
+	-after cooldown for early_xian_persecution
 *added Lugdunum (province_id 2301) to te_christianity.94 to place early_christian_church if population over 20 (city)
 
 *added NOT bracket for te_judaism.1 for Jewish countries
