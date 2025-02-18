@@ -212,7 +212,24 @@ country_decisions = {
 			}
 			capital_scope = {
 				increase_province_rank_effect = yes
-			}	
+			}
+			if = {
+				limit = {
+					p:1453 = {
+						total_population < 20
+						NOT = {
+							has_variable = moved_nova_roma
+						}
+					}
+				}	
+				p:1453 = {
+					add_province_modifier = {
+						name = "ai_constantinople_capital"
+						duration = 4359
+					}
+				}
+				set_variable = moved_nova_roma
+			}
 		}
 
 		ai_will_do = {
