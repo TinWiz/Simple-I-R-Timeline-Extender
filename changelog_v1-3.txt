@@ -83,6 +83,11 @@
 *added AND trigger for te_decisions ai_convert_to_christian to countries not in hellenic culture group AND with roman_pantheon religion
 	-more likely to convert away from hellenism if not of hellenic culture
 
+*added select Christianity saints to ai_convert_to_christian with add_deity_to_pantheon effect
+	-for ROM and all Diadochi tags in is_diadochi_descendant_ai_trigger
+		+also for ARM or country with primary_culture armenian, armenian_heritage and capital_scope in armenia_region
+	-large AI empires often did not add any saints to pantheon
+
 *added scripted_trigger sirte_occident_blob_trigger for num_of_cities > 1000 with any_owned_province is_in_pars_occidentalis_trigger yes
 	-added te_custom_on_action_monthly_country_xian_blob to te_monthly_country_pulse and te_custom_on_actions
 		+duplicates of te_christianity events 91–95 added, te_christianity.191–195
