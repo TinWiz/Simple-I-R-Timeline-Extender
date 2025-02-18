@@ -1110,6 +1110,7 @@ te_christianity.91 = {
 		}
 		NOR = {
 			religion = manichaeism
+			government = tribal_chiefdom
 			has_variable = small_xian_ekklesia_country
 			has_variable = medium_xian_ekklesia_country
 		}
@@ -1245,6 +1246,7 @@ te_christianity.92 = {
 		}
 		NOR = {
 			religion = manichaeism
+			government = tribal_chiefdom
 			has_variable = small_xian_ekklesia_country
 			has_variable = medium_xian_ekklesia_country
 		}
@@ -1369,6 +1371,7 @@ te_christianity.93 = {
 		}
 		NOR = {
 			religion = manichaeism
+			government = tribal_chiefdom
 			has_variable = small_xian_ekklesia_country
 			has_variable = medium_xian_ekklesia_country
 		}
@@ -1500,6 +1503,7 @@ te_christianity.94 = {
 		}
 		NOR = {
 			religion = manichaeism
+			government = tribal_chiefdom
 			has_variable = small_xian_ekklesia_country
 			has_variable = medium_xian_ekklesia_country
 		}
@@ -1629,6 +1633,7 @@ te_christianity.95 = {
 		}
 		NOR = {
 			religion = manichaeism
+			government = tribal_chiefdom
 			has_variable = small_xian_ekklesia_country
 			has_variable = medium_xian_ekklesia_country
 		}
