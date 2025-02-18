@@ -164,6 +164,13 @@
 
 *reduced foederatus te_from_events_country modifier loyalty malus from -50 to -40
 
+*added c3rd_barbarian_sack on_action to c3rd_monthly_country.txt and c3rd_custom_on_actions.txt
+	-and barbarians_border state modifier to c3rd_modifiers.txt
+	-Thanks to Diskianterezh for offering to let me import this script directly
+		+Crisis of the third century mod adds a lot of great content for extra challenges
+	-edited trigger current_date > 1033 (~280 CE)
+	-localizations added to c3rd_l_[language].yml files
+
 ############################################
 Quickfix v1.2.0.2
 
