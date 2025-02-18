@@ -154,6 +154,10 @@
 	-te_christianity_events_l localization edits for te_christianity.7.desc_2:1 in English, French, German, Russian, and Spanish
 		+last sentence altered for tonal consideration with alternative conquests of Rome
 
+*added tribal_chiefdom government to NOR trigger for te_christianity.91–95 events
+	-migratory tribes will no longer get early_xian_community or early_xian_church modifiers
+		+doesn't really make sense for migratory tribes
+
 *added ai_constantinople_capital modifier to effect for te_decisions ai_constantinople
 	-to build up Byzantion if it has < 20 population
 	-also added to ln 167 in IRCK3_decisions for new AI ERE
