@@ -153,6 +153,8 @@
 	-to build up Byzantion if it has < 20 population
 	-also added to ln 167 in IRCK3_decisions for new AI ERE
 
+*reduced foederatus te_from_events_country modifier loyalty malus from -50 to -40
+
 ############################################
 Quickfix v1.2.0.2
 
