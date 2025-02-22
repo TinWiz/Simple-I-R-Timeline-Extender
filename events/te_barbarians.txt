@@ -654,8 +654,8 @@ te_barbarians.15 = {
                             }
                             any_owned_province = {
                                 AND = {
-                                    num_of_tribesmen > 200
-				    is_in_region = scandinavia_region
+                                    num_of_tribesmen > 50
+				                    is_in_region = scandinavia_region
                                     dominant_province_culture_group = culture_group:germanic
                                 }    
                             }
@@ -680,8 +680,8 @@ te_barbarians.15 = {
                             }
                             any_owned_province = {
                                 AND = {
-                                    num_of_tribesmen > 200
-				    is_in_region = scandinavia_region
+                                    num_of_tribesmen > 50
+				                    is_in_region = scandinavia_region
                                     dominant_province_culture_group = culture_group:germanic
                                 }
                             }
@@ -691,8 +691,8 @@ te_barbarians.15 = {
                 owner = {
                     random_owned_province = {
                         limit = {
-                            num_of_tribesmen > 200
-			    is_in_region = scandinavia_region
+                            num_of_tribesmen > 50
+			                is_in_region = scandinavia_region
                             dominant_province_culture_group = culture_group:germanic
                         }
                         save_scope_as = germanic_invaded_province
@@ -1628,14 +1628,14 @@ te_barbarians.55 = {
         }               
         any_owned_province = {
             dominant_province_culture = huna
-            num_of_tribesmen > 200   
+            num_of_tribesmen > 100   
         }
     }
     
     immediate = {
     	random_owned_province = {
             limit = {
-                num_of_tribesmen > 200
+                num_of_tribesmen > 100
                 dominant_province_culture = huna
             }
             save_scope_as = huna_invaded_province
@@ -1684,14 +1684,14 @@ te_barbarians.56 = {
         }               
         any_owned_province = {
             dominant_province_culture = hunnic
-            num_of_tribesmen > 200
+            num_of_tribesmen > 100
         }
     }
 
     immediate = {
         random_owned_province = {
             limit = {
-                num_of_tribesmen > 200
+                num_of_tribesmen > 100
                 dominant_province_culture = hunnic
             }
             save_scope_as = hunnic_invaded_province
