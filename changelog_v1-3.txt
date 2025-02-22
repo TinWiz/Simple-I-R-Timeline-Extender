@@ -164,6 +164,9 @@
 
 *reduced foederatus te_from_events_country modifier loyalty malus from -50 to -40
 
+*deleted loyalty\te_diplomatic_actions.txt
+	-not used
+
 *added c3rd_barbarian_sack on_action to c3rd_monthly_country.txt and c3rd_custom_on_actions.txt
 	-and barbarians_border state modifier to c3rd_modifiers.txt
 	-Thanks to Diskianterezh for offering to let me import this script directly
