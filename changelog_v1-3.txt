@@ -70,6 +70,11 @@
 *added NAND trigger to te_barbarians.5 for is_huna_neighbor_trigger = yes and num_of_cities < 500
 	-excessive Huns stability hits for distant countries already affected by Huna events
 
+*lowered required num_of_tribesmen for barbarian conquests in te_barbarians.txt events
+	-lowered num_of_tribesmen from 200 to 50 for scandinavian_conquest in te_barbarians.15
+	-lowered num_of_tribesmen from 200 to 100 for huna_conquest in te_barbarians.55
+	-lowered num_of_tribesmen from 200 to 100 for hunnic_conquest in te_barbarians.56
+
 *tweaked colour of Christianity from hsv 0.16 to 0.17 for slightly better contrast with Buddhism on map and UI
 
 *added new hidden character events te_rel_flavor.3–5 for converting characters if communities and/or churches destroyed
