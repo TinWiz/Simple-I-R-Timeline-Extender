@@ -33,6 +33,9 @@
 *edited te_manichees.3 and te_manichees.30 to fire if the dominant_province_religion in the capital_scope is manichaeism
 	-creates Manichaean character, required for potential trigger of conversion decision
 
+*removed 0 chance for random_events te_custom_on_action_yearly_country_rel_flavor in te_custom_on_actions.txt
+	-te_rel_flavor.1 and te_rel_flavor.6 each have 50 chance
+
 *lowered religious technology table in half from 0.01 to 0.005
 	-omen balance issues in late timeline
 	-more in line with oratory tech progress
@@ -50,6 +53,19 @@
 	-added to te_barbarians.50 and te_barbarians.150
 		+added to te_custom_on_actions te_custom_on_action_barbarians_morale_pulse
 	-localizations added in te_text_l_[language].yml files
+
+*altered te_barbarians.50 to start on earlier current_date 1034.5.1
+	-altered te_custom_on_action_barbarians_morale_pulse for same trigger date
+		+blocked requirement for has_global_variable germanic_migration
+
+*added events te_barbarians.81–86 to te_barbarians.txt and on_action te_custom_on_action_yearly_country_tribesmen
+	-create istvaeonic or irminonic country in neighbor province of 5140/5142/5146 with more than 50 or 100 tribesmen
+		+more than 100 tribesmen events triggered by germanic_migration_4 global_variable
+			>created country also takes provinces set_owned_by from AI countries in surrounding areas
+
+*lowered stability hit from -60 to -50 in te_barbarians.4
+*added NAND trigger to te_barbarians.5 for is_huna_neighbor_trigger = yes and num_of_cities < 500
+	-excessive Huns stability hits for distant countries already affected by Huna events
 
 *tweaked colour of Christianity from hsv 0.16 to 0.17 for slightly better contrast with Buddhism on map and UI
 
