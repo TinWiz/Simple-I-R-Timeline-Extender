@@ -82,6 +82,9 @@
 		+character variable xian_community_killer value added for te_rel_flavor.1 as trigger check
 	-added check for loyalty modifiers spared_xians_hate and persecuted_xians_glee to remove from new convert characters
 
+*edited te_christianity.96 and te_christianity.97 events to add same limit for judaism owner if owner religion = zoroaster
+	-slows down conversion to Christianity somewhat in Zoroastrian countries
+
 *added x_te_desecrate_holysite.txt file in common \ unit_abilities
 	-added NAND limit for christianity to Militant Epicureanism check
 		+will not give 10 stability if Christian destroying own holy sites
