@@ -1,8 +1,43 @@
-barbarian_fury_discipline = {
-	discipline = 0.1
-	siege_ability = 0.1 
+barbarian_fury_discipline_1 = {
+	discipline = 0.15
+	siege_ability = 0.2 
 	siege_engineers = 1
+	archers_offensive = 0.1
+	archers_defensive = 0.1
+	light_infantry_offensive = 0.1
+	light_infantry_defensive = 0.1
+	horse_archers_offensive = 0.1
+	horse_archers_defensive = 0.1
+	light_cavalry_offensive = 0.1
+	light_cavalry_defensive = 0.1
+	heavy_cavalry_offensive = 0.1
+	heavy_cavalry_defensive = 0.1
+	chariots_offensive = 0.1
+	chariots_defensive = 0.1
+	heavy_infantry_offensive = 0.1
+	heavy_infantry_defensive = 0.1
 }
+
+barbarian_fury_discipline_2 = {
+	discipline = 0.25
+	siege_ability = 0.3
+	siege_engineers = 2
+	archers_offensive = 0.2
+	archers_defensive = 0.2
+	light_infantry_offensive = 0.2
+	light_infantry_defensive = 0.2
+	horse_archers_offensive = 0.2
+	horse_archers_defensive = 0.2
+	light_cavalry_offensive = 0.2
+	light_cavalry_defensive = 0.2
+	heavy_cavalry_offensive = 0.2
+	heavy_cavalry_defensive = 0.2
+	chariots_offensive = 0.2
+	chariots_defensive = 0.2
+	heavy_infantry_offensive = 0.2
+	heavy_infantry_defensive = 0.2
+}
+
 cursed_by_elohim = {
 	levy_size_multiplier = -0.01
 	global_monthly_food_modifier = -0.1
@@ -25,7 +60,7 @@ germanisch_wanderung = {
 	global_manpower_modifier = 0.4 # 0.25 added from 50% Very hard below   
 	manpower_recovery_speed = 0.3 # 0.1 added from Antagonist below
 	land_morale_recovery = 0.05
-	land_morale = 0.15
+	land_morale = 0.30 #SIRTE base morale boost doubled v1.3
 
 	## Hard / Very Hard AI mods 50% from Antagonist bonus
 	land_morale_modifier = 0.15 # same as very hard AI plus 50%
@@ -49,6 +84,25 @@ germanisch_wanderung = {
 	war_exhaustion = -0.1
 	integrate_speed = 2
 	subject_opinions = 40
+
+	#Extra
+	discipline = 0.15
+	siege_ability = 0.2 
+	siege_engineers = 1
+	archers_offensive = 0.1
+	archers_defensive = 0.1
+	light_infantry_offensive = 0.1
+	light_infantry_defensive = 0.1
+	#horse_archers_offensive = 0.1
+	#horse_archers_defensive = 0.1
+	light_cavalry_offensive = 0.1
+	light_cavalry_defensive = 0.1
+	#heavy_cavalry_offensive = 0.1
+	#heavy_cavalry_defensive = 0.1
+	chariots_offensive = 0.1
+	chariots_defensive = 0.1
+	#heavy_infantry_offensive = 0.1
+	#heavy_infantry_defensive = 0.1
 }
 
 late_antiquity_pop_decline_central = {
@@ -91,5 +145,5 @@ late_antiquity_pop_decline_orient = {
 }
 
 sirte_foederatus = {
-	loyalty_to_overlord = -50
+	loyalty_to_overlord = -40
 }

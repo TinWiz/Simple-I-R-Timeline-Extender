@@ -1,6 +1,8 @@
 ﻿l_german:
- barbarian_fury_discipline:0 "Verbissen"
- barbarian_fury_rage:0 "Wütend"
+ barbarian_fury_discipline_1:0 "Verbissen"
+ barbarian_fury_rage_1:0 "Wütend"
+ barbarian_fury_discipline_2:0 "Verbissen"
+ barbarian_fury_rage_2:0 "Wütend"
  barbarian_invasion_skirmish:0 "Barbaren wandern"
  barbarian_invasion_war:0 "Einmarsch der Barbaren!"
 
@@ -12,6 +14,8 @@
  desc_late_antiquity_decentralization_settlement:1 "Menschen ziehen in die Siedlungen."
 
  germanisch_wanderung:0 "Völkerwanderung"
+
+ ai_constantinople_capital:0 "Nova Roma"
 
  #######CULTURE#######:0 ""
  hunnic:0 "Hunnisch"
@@ -60,13 +64,32 @@
  
  christian_church_embelishment:0 "Verschönerte Kathedrale"
  desc_christian_church_embelishment:0 "Ursprünglich eine eher bescheidene Struktur, wurde unsere Kathedrale durch die großzügigen Spenden der christlichen Gläubigen und die Fürsprache des heiligen Petrus verschönert. Mit jeder Generation, die vergeht, wird die Kathedrale aufgewertet und mit der Zeit kann ihr Aussehen den Sitz des Bischofs als Nachfolger der Apostel angemessen widerspiegeln."
+
+ manichaean_temple:0 "Manichäischer Tempel"
+ desc_manichaean_temple:0 "Du hast deine Offenheit für verschiedene religiöse Ideen gezeigt, indem du der neuen Sekte der Manichäer erlaubt hast, hier einen Tempel zu errichten." 
+ 
+ allowed_manichees:0 "Erlaubte Manichäer"
+ disallowed_manichees:0 "Unerlaubte Manichäer"
+ manichee_appreciation:0 "Manichäische Wertschätzung"
+ manichee_resentment:0 "Manichäischer Groll"
  
  #####PLAGUES#####:0 ""
- antonine_plague_epidemic:0 "Antonine-Pest-Epidemie"
- desc_antonine_plague_epidemic:0 "Ein Ausbruch einer tödlichen Krankheit hat diese Provinz infiziert."
+ antonine_plague_epidemic_quarantine:0 "Antoninische Pestepidemie"
+ desc_antonine_plague_epidemic_quarantine:0 "Diese Stadt steht während einer tödlichen Pandemie unter Quarantäne."
+ cyprian_plague_epidemic_quarantine:0 "Cyprianische Pestepidemie"
+ desc_cyprian_plague_epidemic_quarantine:0 "Diese Stadt steht während einer tödlichen Pandemie unter Quarantäne."
+ cyprian_plague_epidemic_quarantown:0 "Cyprianische Pestepidemie"
+ desc_cyprian_plague_epidemic_quarantown:0 "Diese Stadt steht während einer tödlichen Pandemie unter Quarantäne."
 
- cyprian_plague_epidemic:0 "Cyprianische Pestepidemie"
- desc_cyprian_plague_epidemic:0 "Eine tödliche Krankheit hat die Bevölkerung hier infiziert."
+ plague_outbreak_province:0 "Ausbruch der Pest"
+ desc_plague_outbreak_province:0 "Ein Ausbruch einer tödlichen Krankheit hat diese Provinz infiziert."
+
+ antonine_plague_epidemic_outbreak_city:0 "Antoninische Pestepidemie"
+ desc_antonine_plague_epidemic_outbreak_city:0 "Eine tödliche Krankheit hat die Bevölkerung hier infiziert."
+ cyprian_plague_epidemic_outbreak_city:0 "Cyprianische Pestepidemie"
+ desc_cyprian_plague_epidemic_outbreak_city:0 "Eine tödliche Krankheit hat die Bevölkerung hier infiziert."
+ cyprian_plague_epidemic_outbreak_town:0 "Ausbruch der Cyprianische Pest"
+ desc_cyprian_plague_epidemic_outbreak_town:0 "Ein Ausbruch einer tödlichen Krankheit hat diese Provinz infiziert."
 
  #####COUNTRY MODIFIERS#####:0 ""
  cursed_by_elohim:0 "Verflucht von Elohim"

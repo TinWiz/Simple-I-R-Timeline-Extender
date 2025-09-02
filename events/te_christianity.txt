@@ -193,6 +193,22 @@ te_christianity.41 = {
 
 	option = {
 		name = "te_christianity.41.a"
+		trigger = {
+			NOT = { religion = judaism }
+		}
+		p:6895 = {
+			random_pops_in_province = {
+				set_pop_religion = christianity
+			}
+			add_permanent_province_modifier = {
+				name = "early_christian_community"
+			}	
+		}
+	}
+
+	option = {
+		name = "te_christianity.41.b"
+		trigger = { religion = judaism }
 		p:6895 = {
 			random_pops_in_province = {
 				set_pop_religion = christianity
@@ -295,13 +311,25 @@ te_christianity.7 = {
 	desc = {
 		first_valid = {
 			triggered_desc = { # Rome
-				trigger = { tag = ROM }	
+				trigger = { 
+					OR = {	
+						tag = ROM
+						AND = {
+							primary_culture = roman
+							heritage = roman_heritage
+						}
+					}	
+				}
 				desc = "te_christianity.7.desc_1"
 			}
 			triggered_desc = { # Ruma?
 				trigger = {
-					NOT = {
+					NOR = {
 						tag = ROM
+						AND = {
+							primary_culture = roman
+							heritage = roman_heritage
+						}
 					}
 				}
 				desc = "te_christianity.7.desc_2"
@@ -752,40 +780,7 @@ te_christianity.72 = {
 				heritage = roman_heritage
 				primary_culture = roman
 			}
-			tag = MAC
-			AND = {
-				primary_culture = macedonian
-				capital_scope = {
-					is_in_region = macedonia_region
-				}
-				heritage = cassanders_heritage
-			}
-			tag = TRE
-			AND = {
-				primary_culture = macedonian
-				capital_scope = {
-					is_in_region = thrace_region
-				}
-				heritage = thrace_heritage
-			}
-			tag = EGY
-			AND = {
-				primary_culture = macedonian
-				capital_scope = {
-					is_in_region = lower_egypt_region
-				}
-				heritage = ptolemys_heritage
-			}
-			tag = PRY
-			AND = {
-				primary_culture = macedonian
-				heritage = antigonid_heritage
-			}
-			tag = SEL
-			AND = {
-				primary_culture = macedonian
-				heritage = seleucus_heritage
-			}
+			is_diadochi_descendant_ai_trigger = yes
 			tag = ERE
 			tag = WRE
 		}
@@ -1097,6 +1092,7 @@ te_christianity.91 = {
 	trigger = {
 		current_date > 999.12.12
 		has_global_variable = christianity_expands
+		sirte_occident_blob_trigger = no
 		any_owned_province = {
 			OR = {
 				is_in_region = arabia_region
@@ -1112,8 +1108,11 @@ te_christianity.91 = {
 				has_variable = early_xian_persecution
 			}
 		}
-		NOT = {
+		NOR = {
 			religion = manichaeism
+			government = tribal_chiefdom
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
 		}
 	}
 
@@ -1174,6 +1173,7 @@ te_christianity.91 = {
 			}
 			if = {
 				limit = {
+					root = { num_of_cities > 1 }
 					OR = {
 						total_population > 80
 						AND = {
@@ -1194,6 +1194,30 @@ te_christianity.91 = {
 			}
 		}
 	}
+
+	option = {
+		if = {
+			limit = {
+				AND = {
+					num_of_cities <= 100
+					num_of_cities > 10
+				}
+			}
+			set_variable = {
+				name = medium_xian_ekklesia_country
+				days = 1089
+			}		
+		}
+		else_if = {
+			limit = {
+				num_of_cities <= 10
+			}
+			set_variable = {
+				name = small_xian_ekklesia_country
+				days = 3267
+			}	
+		}
+	}
 }
 
 #Christianity reaches Gaul and Spain
@@ -1204,6 +1228,7 @@ te_christianity.92 = {
 	trigger = {
 		current_date > 930.09.30
 		has_global_variable = christianity_expands
+		sirte_occident_blob_trigger = no
 		any_owned_province = {
 			OR = {
 				is_in_region = central_gaul_region 
@@ -1219,8 +1244,11 @@ te_christianity.92 = {
 				has_variable = early_xian_persecution
 			}
 		}
-		NOT = {
+		NOR = {
 			religion = manichaeism
+			government = tribal_chiefdom
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
 		}
 	}
 
@@ -1266,6 +1294,7 @@ te_christianity.92 = {
 			}
 			if = {
 				limit = {
+					root = { num_of_cities > 1 }
 					OR = {
 						total_population > 80
 						AND = {
@@ -1286,6 +1315,30 @@ te_christianity.92 = {
 			}
 		}	
 	}
+
+	option = {
+		if = {
+			limit = {
+				AND = {
+					num_of_cities <= 100
+					num_of_cities > 10
+				}
+			}
+			set_variable = {
+				name = medium_xian_ekklesia_country
+				days = 1089
+			}		
+		}
+		else_if = {
+			limit = {
+				num_of_cities <= 10
+			}
+			set_variable = {
+				name = small_xian_ekklesia_country
+				days = 3267
+			}	
+		}
+	}
 }
 
 #Christianity Spreads East — Media, Persia, Parthia and Bactria
@@ -1300,6 +1353,7 @@ te_christianity.93 = {
 	trigger = {
 		current_date > 890.09.08
 		has_global_variable = christianity_expands
+		sirte_occident_blob_trigger = no
 		any_owned_province = {
 			OR = {
 				is_in_region = mesopotamia_region
@@ -1315,8 +1369,11 @@ te_christianity.93 = {
 				has_variable = early_xian_persecution
 			}
 		}
-		NOT = {
+		NOR = {
 			religion = manichaeism
+			government = tribal_chiefdom
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
 		}
 	}
 	
@@ -1372,6 +1429,7 @@ te_christianity.93 = {
 
 			if = {
 				limit = {
+					root = { num_of_cities > 1 }
 					OR = {
 						total_population > 80
 						AND = {
@@ -1392,6 +1450,30 @@ te_christianity.93 = {
 			}	 
 		}
 	}
+
+	option = {
+		if = {
+			limit = {
+				AND = {
+					num_of_cities <= 100
+					num_of_cities > 10
+				}
+			}
+			set_variable = {
+				name = medium_xian_ekklesia_country
+				days = 1089
+			}		
+		}
+		else_if = {
+			limit = {
+				num_of_cities <= 10
+			}
+			set_variable = {
+				name = small_xian_ekklesia_country
+				days = 3267
+			}	
+		}
+	}
 }
 
 #Christianity Expands — Italy, Africa, Assyria
@@ -1402,6 +1484,7 @@ te_christianity.94 = {
 	trigger = {
 		current_date > 843.4.30
 		has_global_variable = christianity_expands
+		sirte_occident_blob_trigger = no
 		any_owned_province = {
 			OR = {
 				is_in_region = transalpine_gaul_region
@@ -1418,12 +1501,15 @@ te_christianity.94 = {
 				has_variable = early_xian_persecution
 			}
 		}
-		NOT = {
+		NOR = {
 			religion = manichaeism
+			government = tribal_chiefdom
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
 		}
 	}
 
-	option = {
+	immediate = {
 		random_owned_province = {
 			limit = {
 				OR = {
@@ -1466,7 +1552,18 @@ te_christianity.94 = {
 			}
 			if = {
 				limit = {
-					total_population > 80		
+					root = { num_of_cities > 1 }
+					OR = {
+						total_population > 80	
+						AND = {
+							province_id = 2301 #Lugdunum
+							total_population > 20
+						}
+						AND = {
+							province_id = 1
+							total_population > 20
+						}
+					}		
 				}	
 				add_permanent_province_modifier = {
 					name = "early_christian_church"
@@ -1480,6 +1577,30 @@ te_christianity.94 = {
 			}
 		}	
 	}	
+
+	option = {
+		if = {
+			limit = {
+				AND = {
+					num_of_cities <= 100
+					num_of_cities > 10
+				}
+			}
+			set_variable = {
+				name = medium_xian_ekklesia_country
+				days = 1089
+			}		
+		}
+		else_if = {
+			limit = {
+				num_of_cities <= 10
+			}
+			set_variable = {
+				name = small_xian_ekklesia_country
+				days = 3267
+			}	
+		}
+	}
 }
 
 #Christianity Expands — Anatolia 
@@ -1493,6 +1614,7 @@ te_christianity.95 = {
 	
 	trigger = {
 		has_global_variable = christianity_expands
+		sirte_occident_blob_trigger = no
 		any_owned_province = {
 			OR = {
 				is_in_region = armenia_region
@@ -1509,8 +1631,11 @@ te_christianity.95 = {
 				has_variable = early_xian_persecution
 			}
 		}
-		NOT = {
+		NOR = {
 			religion = manichaeism
+			government = tribal_chiefdom
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
 		}
 	}
 	
@@ -1555,6 +1680,7 @@ te_christianity.95 = {
 			}
 			if = {
 				limit = {
+					root = { num_of_cities > 1 }
 					total_population > 80
 				}	
 				add_permanent_province_modifier = {
@@ -1567,6 +1693,28 @@ te_christianity.95 = {
 					duration = 144000
 				}
 			}	 
+		}
+	}
+
+	option = {
+		if = {
+			limit = {
+				AND = {
+					num_of_cities <= 100
+					num_of_cities > 10
+				}
+			}
+			set_variable = {
+				name = medium_xian_ekklesia_country
+				days = 1089
+			}		
+		}
+		else_if = {
+			limit = { num_of_cities <= 10 }
+			set_variable = {
+				name = small_xian_ekklesia_country
+				days = 3267
+			}	
 		}
 	}
 }
@@ -1582,6 +1730,10 @@ te_christianity.96 = {
 		#current_date < 1133.2.27 #AD 380 Edict of Thessalonica	
 		has_province_modifier = early_christian_community
 		has_owner = yes	
+		NOR = {	
+			has_variable = medium_xian_ekklesia_province
+			has_variable = small_xian_ekklesia_province
+		}
 	}
 
 	immediate = {
@@ -1591,8 +1743,9 @@ te_christianity.96 = {
 					current_date < 1000.10.1
 					dominant_province_religion = christianity
 				}
-				NOT = {
+				NOR = {
 					owner = { religion = judaism }
+					owner = { religion = zoroaster }
 				}
 			}
 			random_pops_in_province = {
@@ -1615,14 +1768,49 @@ te_christianity.96 = {
 		}
 		else_if = {
 			limit = {
-				owner = { religion = judaism }
-				dominant_province_religion = judaism
+				owner = { 
+					OR = { 
+						religion = judaism 
+						religion = zoroaster
+					}
+				}	
+				OR = {
+					dominant_province_religion = judaism
+					dominant_province_religion = zoroaster
+				}
 			}
 			random_pops_in_province = {
 				set_pop_religion = christianity
 			}
 		}
 	}
+
+	option = {
+		if = {
+			limit = {
+				owner = {
+					AND = {
+						num_of_cities <= 100
+						num_of_cities >= 25
+					}
+				}	
+			}
+			set_variable = {
+				name = medium_xian_ekklesia_province
+				days = 726
+			}		
+		}
+		else_if = {
+			limit = {
+				owner = { num_of_cities < 25 }
+			}
+			set_variable = {
+				name = small_xian_ekklesia_province
+				days = 1452
+			}	
+		}
+	}
+	
 }
 
 #Large church or cosmopolitan
@@ -1646,8 +1834,9 @@ te_christianity.97 = {
 					#province_id = 1
 					dominant_province_religion = christianity
 				}
-				NOT = {
+				NOR = {
 					owner = { religion = judaism }
+					owner = { religion = zoroaster }
 				}
 				any_pops_in_province = {
 					count > 8
@@ -1670,11 +1859,19 @@ te_christianity.97 = {
 		}
 		else_if = {
 			limit = {
-			    owner = { religion = judaism }
+			    owner = { 
+					OR = {
+						religion = judaism 
+						religion = zoroaster
+					}
+				}	
 				any_pops_in_province = {
 					count > 8
 				}
-				dominant_province_religion = judaism
+				OR = {
+					dominant_province_religion = judaism
+					dominant_province_religion = zoroaster
+				}
 			}
 			random_pops_in_province = {
 				set_pop_religion = christianity
@@ -1812,4 +2009,532 @@ te_christianity.99 = {
 		#	set_variable = new_minor_xian
 		#}
 	}
+}
+
+################################ sirte_occident_blob_trigger RANDOM EVENTS SHIFT #####################################
+
+te_christianity.191 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		current_date > 999.12.12
+		has_global_variable = christianity_expands
+		sirte_occident_blob_trigger = yes
+		any_owned_province = {
+			OR = {
+				is_in_region = arabia_region
+				is_in_region = arabia_felix_region
+				is_in_region = gedrosia_region
+				is_in_region = nubia_region
+				is_in_region = punt_region
+				is_in_region = upper_egypt_region
+			}
+			NOR = {
+				has_province_modifier = early_christian_church
+				has_province_modifier = early_christian_community
+				has_variable = early_xian_persecution
+			}
+		}
+		NOR = {
+			religion = manichaeism
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
+		}
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {
+					is_in_region = arabia_region
+					is_in_region = arabia_felix_region
+					is_in_region = gedrosia_region
+					is_in_region = nubia_region
+					is_in_region = punt_region
+					is_in_region = upper_egypt_region
+				}
+				any_pops_in_province = {
+					NOR = { 
+						pop_religion = christianity
+						pop_religion = judaism 
+						pop_religion = manichaeism
+					}
+				}
+				NOR = {
+					has_province_modifier = early_christian_church
+					has_province_modifier = early_christian_community
+					has_variable = early_xian_persecution
+				}
+			}
+			weight = {
+				base = 1
+				modifier = {
+					add = 4
+					is_in_region = punt_region
+				}	
+				modifier = {
+					add = 2
+					is_in_region = nubia_region
+				}
+				modifier = {
+					add = 1
+					is_in_region = upper_egypt_region
+				}
+			}
+			ordered_pops_in_province = {
+				limit = {
+					NOR = {
+						pop_religion = christianity
+						pop_religion = manichaeism
+						pop_religion = judaism
+					}
+				}
+				order_by = pop_hapiness
+				max = {
+					value = total_population
+					divide = 3
+				}
+				check_range_bounds = no
+				set_pop_religion = christianity
+			}
+			if = {
+				limit = {
+					root = { num_of_cities > 1 }
+					OR = {
+						total_population > 80
+						AND = {
+							province_id = 7506
+							total_population > 20
+						}	
+					}	
+				}	
+				add_permanent_province_modifier = {
+					name = "early_christian_church"
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = "early_christian_community"
+					duration = 144000
+				}
+			}
+		}
+	}
+}
+
+#Christianity reaches Gaul and Spain
+te_christianity.192 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		current_date > 930.09.30
+		has_global_variable = christianity_expands
+		sirte_occident_blob_trigger = yes
+		any_owned_province = {
+			OR = {
+				OR = {
+					is_in_region = central_gaul_region
+					AND = {
+						is_in_area = parisia_area 
+						any_neighbor_province = {
+							dominant_province_religion = christianity
+						} 
+					}
+				}		
+				is_in_region = baetica_region
+				is_in_region = contestania_region
+				is_in_region = gallaecia_region
+				is_in_region = illyria_region
+				is_in_region = magna_graecia_region
+			}
+			NOR = {
+				has_province_modifier = early_christian_church
+				has_province_modifier = early_christian_community
+				has_variable = early_xian_persecution
+			}
+		}
+		NOR = {
+			religion = manichaeism
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
+		}
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {
+					OR = {
+						is_in_region = central_gaul_region
+						AND = {
+							is_in_area = parisia_area 
+							any_neighbor_province = {
+								dominant_province_religion = christianity
+							} 
+						}
+					}
+					is_in_region = baetica_region
+					is_in_region = contestania_region
+					is_in_region = gallaecia_region
+					is_in_region = illyria_region
+					is_in_region = magna_graecia_region
+				}
+				any_pops_in_province = {
+					NOR = { 
+						pop_religion = christianity 
+						pop_religion = judaism
+					}
+				}
+				NOT = {
+					OR = {
+						has_province_modifier = early_christian_church
+						has_province_modifier = early_christian_community
+						has_variable = early_xian_persecution
+					}
+				}
+			}
+			ordered_pops_in_province = {
+				limit = {
+					NOR = {
+						pop_religion = christianity
+						pop_religion = judaism
+					}
+				}
+				order_by = pop_hapiness
+				max = {
+					value = total_population
+					divide = 3
+				}
+				check_range_bounds = no
+				set_pop_religion = christianity
+			}
+			if = {
+				limit = {
+					root = { num_of_cities > 1 }
+					OR = {
+						total_population > 80
+						AND = {
+							province_id = 2475
+							total_population > 20
+						}
+					}	
+				}	
+				add_permanent_province_modifier = {
+					name = "early_christian_church"
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = "early_christian_community"
+					duration = 144000
+				}
+			}
+		}	
+	}
+}
+
+#Christianity Spreads East — Media, Persia, Parthia and Bactria
+te_christianity.193 = {
+	type = country_event
+	hidden = yes
+	
+	#left_portrait = current_ruler
+	
+	#
+	
+	trigger = {
+		current_date > 890.09.08
+		has_global_variable = christianity_expands
+		sirte_occident_blob_trigger = yes
+		any_owned_province = {
+			OR = {
+				is_in_region = mesopotamia_region
+				is_in_region = persis_region
+				is_in_region = media_region
+				is_in_region = bactriana_region
+				is_in_region = parthia_region
+				is_in_region = mauretainia_region
+			}
+			NOR = {
+				has_province_modifier = early_christian_church
+				has_province_modifier = early_christian_community
+				has_variable = early_xian_persecution
+			}
+		}
+		NOR = {
+			religion = manichaeism
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
+		}
+	}
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {
+					is_in_region = mesopotamia_region
+					is_in_region = persis_region
+					is_in_region = media_region
+					is_in_region = bactriana_region
+					is_in_region = parthia_region
+					is_in_region = mauretainia_region
+				}
+				any_pops_in_province = {
+					NOR = { 
+						pop_religion = christianity 
+						pop_religion = manichaeism
+					}
+				}
+				NOR = {
+					has_province_modifier = early_christian_church
+					has_province_modifier = early_christian_community
+					has_variable = early_xian_persecution
+				}
+			}
+			weight = {
+				base = 1
+				modifier = {
+					add = 4
+					is_in_region = mesopotamia_region
+				}
+				modifier = {
+					add = 2
+					is_in_region = persis_region
+				}
+			}	
+			ordered_pops_in_province = {
+				limit = {
+					NOR = {
+						pop_religion = christianity
+						pop_religion = manichaeism
+					}
+				}
+				order_by = pop_hapiness
+				max = {
+					value = total_population
+					divide = 3
+				}
+				check_range_bounds = no
+				set_pop_religion = christianity
+			}
+
+			if = {
+				limit = {
+					root = { num_of_cities > 1 }
+					OR = {
+						total_population > 80
+						AND = {
+							province_id = 912
+							total_population > 20
+						}
+					}		
+				}	
+				add_permanent_province_modifier = {
+					name = "early_christian_church"
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = "early_christian_community"
+					duration = 144000
+				}
+			}	 
+		}
+	}
+
+}
+
+#Christianity Expands — Italy, Africa, Assyria
+te_christianity.194 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		current_date > 843.4.30
+		has_global_variable = christianity_expands
+		sirte_occident_blob_trigger = yes
+		any_owned_province = {
+			OR = {
+				is_in_region = transalpine_gaul_region
+				is_in_region = central_italy_region
+				is_in_region = africa_region
+				is_in_region = numidia_region
+				is_in_region = cyrenaica_region
+				is_in_region = assyria_region
+				is_in_region = macedonia_region
+			}	
+			NOR = {
+				has_province_modifier = early_christian_church
+				has_province_modifier = early_christian_community
+				has_variable = early_xian_persecution
+			}
+		}
+		NOR = {
+			religion = manichaeism
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
+		}
+	}
+
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {
+					is_in_region = transalpine_gaul_region
+					is_in_region = central_italy_region
+					is_in_region = africa_region
+					is_in_region = numidia_region
+					is_in_region = cyrenaica_region
+					is_in_region = assyria_region
+					is_in_region = macedonia_region
+				}
+				any_pops_in_province = {
+					NOR = { 
+						pop_religion = christianity 
+						pop_religion = judaism
+					}
+				}
+				NOR = {
+					has_province_modifier = early_christian_church
+					has_province_modifier = early_christian_community
+					has_variable = early_xian_persecution
+				}
+			}
+			ordered_pops_in_province = {
+				limit = {
+					NOR = {
+						pop_religion = christianity
+						pop_religion = judaism
+					}
+				}
+				order_by = pop_hapiness
+				max = {
+					value = total_population
+					divide = 4
+				}
+				check_range_bounds = no
+				set_pop_religion = christianity
+			}
+			if = {
+				limit = {
+					root = { num_of_cities > 1 }
+					OR = {
+						total_population > 80	
+						AND = {
+							province_id = 2301 #Lugdunum
+							total_population > 20
+						}
+						AND = {
+							province_id = 1
+							total_population > 20
+						}
+					}	
+				}	
+				add_permanent_province_modifier = {
+					name = "early_christian_church"
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = "early_christian_community"
+					duration = 144000
+				}
+			}
+		}	
+	}	
+
+}
+
+#Christianity Expands — Anatolia 
+te_christianity.195 = {
+	type = country_event
+	hidden = yes
+	
+	#left_portrait = current_ruler
+	
+	#
+	
+	trigger = {
+		has_global_variable = christianity_expands
+		sirte_occident_blob_trigger = yes
+		any_owned_province = {
+			OR = {
+				is_in_region = armenia_region
+				is_in_region = asia_region
+				is_in_region = cilicia_region
+				is_in_region = galatia_region
+				is_in_region = bithynia_region
+				is_in_region = cappadocia_pontica_region
+				is_in_region = thrace_region
+			}
+			NOR = {
+				has_province_modifier = early_christian_church
+				has_province_modifier = early_christian_community
+				has_variable = early_xian_persecution
+			}
+		}
+		NOR = {
+			religion = manichaeism
+			has_variable = small_xian_ekklesia_country
+			has_variable = medium_xian_ekklesia_country
+		}
+	}
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				OR = {
+					is_in_region = armenia_region
+					is_in_region = asia_region
+					is_in_region = cilicia_region
+					is_in_region = galatia_region
+					is_in_region = bithynia_region
+					is_in_region = cappadocia_pontica_region
+					is_in_region = thrace_region
+				}
+				any_pops_in_province = {
+					NOT = { 
+						pop_religion = christianity 
+					}
+				}
+				NOR = {
+					has_province_modifier = early_christian_church
+					has_province_modifier = early_christian_community
+					has_variable = early_xian_persecution
+				}
+			}
+			ordered_pops_in_province = {
+				limit = {
+					NOT = {
+						pop_religion = christianity
+					}
+				}
+				order_by = pop_hapiness
+				max = {
+					value = total_population
+					divide = 4
+				}
+				check_range_bounds = no
+				set_pop_religion = christianity
+			}
+			if = {
+				limit = {
+					root = { num_of_cities > 1 }
+					total_population > 80
+				}	
+				add_permanent_province_modifier = {
+					name = "early_christian_church"
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = "early_christian_community"
+					duration = 144000
+				}
+			}	 
+		}
+	}
+
 }

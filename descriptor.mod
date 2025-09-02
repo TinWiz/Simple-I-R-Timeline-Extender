@@ -1,7 +1,7 @@
-version="1.2"
+version="1.3"
 name="Simple I:R Timeline Extender"
 tags={
 	"Historical"
 	"Overhaul"
 }
-supported_version="2.0.4"
+supported_version="2.0.5"

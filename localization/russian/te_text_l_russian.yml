@@ -1,6 +1,8 @@
 ﻿l_russian:
- barbarian_fury_discipline:0 "Упорный" 
- barbarian_fury_rage:0 "Яростный"
+ barbarian_fury_discipline_1:0 "Упорный" 
+ barbarian_fury_rage_1:0 "Яростный"
+ barbarian_fury_discipline_2:0 "Упорный" 
+ barbarian_fury_rage_2:0 "Яростный"
  barbarian_invasion_skirmish:0 "Мигрирующие варвары"
  barbarian_invasion_war:0 "Вторжение варваров!"
 
@@ -12,6 +14,8 @@
  desc_late_antiquity_decentralization_settlement:1 "Люди переезжают в сельскую местность."
 
  germanisch_wanderung:0 "Вели́кое переселе́ние"
+
+ ai_constantinople_capital:0 "Nova Roma"
 
  #######CULTURE#######:0 ""
  hunnic:0 "Гуннский"
@@ -47,12 +51,31 @@
  christian_church_embelishment:0 "Украшенный собор"
  desc_christian_church_embelishment:0 "Первоначально довольно скромное строение, наш собор был украшен щедрыми пожертвованиями верующих христиан и заступничеством св. Петра. С каждым поколением собор совершенствуется, и со временем его внешний вид может правильно отражать резиденцию епископа как преемника апостолов."
 
- #####PLAGUES#####:0 ""
- antonine_plague_epidemic:0 "Антонинская Эпидемия чумы"
- desc_antonine_plague_epidemic:0 "Вспышка смертельной болезни поразила эту провинцию."
+ manichaean_temple:0 "Манихейский храм"
+ desc_manichaean_temple:0 "Вы продемонстрировали свое открытое отношение к различным религиозным идеям, разрешив новой секте манихеев построить здесь храм." 
 
- cyprian_plague_epidemic:0 "Эпидемия кипрской чумы"
- desc_cyprian_plague_epidemic:0 "Смертельная болезнь заразила здесь население."
+ allowed_manichees:0 "Разрешенные манихеи"
+ disallowed_manichees:0 "Запрещенные манихеи"
+ manichee_appreciation:0 "Признательность манихеев"
+ manichee_resentment:0 "Негодование манихеев"
+
+ #####PLAGUES#####:0 ""
+ antonine_plague_epidemic_quarantine:0 "Антонинская Эпидемия чумы"
+ desc_antonine_plague_epidemic_quarantine:0 "Этот город находится на карантине во время смертельной пандемии."
+ cyprian_plague_epidemic_quarantine:0 "Эпидемия кипрской чумы"
+ desc_cyprian_plague_epidemic_quarantine:0 "Этот город находится на карантине во время смертельной пандемии."
+ cyprian_plague_epidemic_quarantown:0 "Эпидемия кипрской чумы"
+ desc_cyprian_plague_epidemic_quarantown:0 "Этот город находится на карантине во время смертельной пандемии."
+
+ plague_outbreak_province:0 "Вспышка чумы"
+ desc_plague_outbreak_province:0 "Вспышка смертельной болезни поразила эту провинцию."
+
+ antonine_plague_epidemic_outbreak_city:0 "Антонинская Эпидемия чумы"
+ desc_antonine_plague_epidemic_outbreak_city:0 "Смертельная болезнь заразила здесь население."
+ cyprian_plague_epidemic_outbreak_city:0 "Эпидемия кипрской чумы"
+ desc_cyprian_plague_epidemic_outbreak_city:0 "Смертельная болезнь заразила здесь население."
+ cyprian_plague_epidemic_outbreak_town:0 "Вспышка чумы"
+ desc_cyprian_plague_epidemic_outbreak_town:0 "Вспышка смертельной болезни поразила эту провинцию."
 
  #####COUNTRY MODIFIERS#####:0 ""
  cursed_by_elohim:0 "Проклят Элохимом"
