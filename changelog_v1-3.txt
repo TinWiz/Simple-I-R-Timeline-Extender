@@ -1,4 +1,5 @@
->> Changelog 1.3 <<
+>> Changelog 1.3.0.1 <<
+*updated supported version number to 2.0.5
 
 *added new events te_plagues.13 for Antonine plague and te_plagues.23 for Cyprian plague province territory spread 
 	-added new province outbreak and city outbreak modifiers, separated quarantine modifiers
@@ -220,3 +221,4 @@ Quickfix v1.2.0.2
 	error log complaints
 
 ############################################
+
