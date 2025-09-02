@@ -4,4 +4,4 @@ tags={
 	"Historical"
 	"Overhaul"
 }
-supported_version="2.0.4"
+supported_version="2.0.5"
